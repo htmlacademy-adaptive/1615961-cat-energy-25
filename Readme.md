@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Илья Тарасов](https://up.htmlacademy.ru/adaptive/25/user/1615961).
-* Наставник: `Неизвестно`.
+* Наставник: [Руслан Бреев](https://htmlacademy.ru/profile/blckwltz)
 
 ---
 
