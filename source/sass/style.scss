@@ -1,1 +1,32 @@
-body { background: lightgrey; }
+@import "blocks/fonts.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
+// Header
+@import "blocks/header/header.scss";
+@import "blocks/header/navigation.scss";
+// Main
+@import "blocks/main/advantages.scss";
+@import "blocks/main/advantages.scss";
+@import "blocks/main/cat-parameters.scss";
+@import "blocks/main/catalog-container.scss";
+@import "blocks/main/contacts.scss";
+@import "blocks/main/control-checkbox.scss";
+@import "blocks/main/control-input.scss";
+@import "blocks/main/control-radio.scss";
+@import "blocks/main/extra-card.scss";
+@import "blocks/main/extra-cards.scss";
+@import "blocks/main/food-card.scss";
+@import "blocks/main/food-cards.scss";
+@import "blocks/main/food-program.scss";
+@import "blocks/main/food-programs.scss";
+@import "blocks/main/form-container.scss";
+@import "blocks/main/gift.scss";
+@import "blocks/main/main-container.scss";
+@import "blocks/main/results-condition.scss";
+@import "blocks/main/results.scss";
+@import "blocks/main/show-more.scss";
+// Footer
+@import "blocks/footer/footer.scss";
+@import "blocks/footer/social.scss";
+
+
