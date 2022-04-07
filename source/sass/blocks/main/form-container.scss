@@ -1,13 +1,11 @@
-.form-container {
-  &__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-  }
+.form-container__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
 
-  &__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-  }
+.form-container__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }

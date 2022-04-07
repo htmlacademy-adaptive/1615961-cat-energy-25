@@ -1,16 +1,13 @@
-.contacts {
+.contacts__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  &__title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
-
-  &__address {
-    font-family: "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-  }
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }

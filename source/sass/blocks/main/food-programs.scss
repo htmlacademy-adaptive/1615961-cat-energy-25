@@ -1,13 +1,11 @@
-.food-programs {
-  &__less-weight {
-    background-image: url("/source/img/less-weight.png");
-    background-repeat: no-repeat;
-    background-position: 22px 21px;
-  }
+.food-programs__less-weight {
+  background-image: url("/source/img/less-weight.png");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
+}
 
-  &__more-weight {
-    background-image: url("/source/img/more-weight.svg");
-    background-repeat: no-repeat;
-    background-position: 22px 21px;
-  }
+.food-programs__more-weight {
+  background-image: url("/source/img/more-weight.svg");
+  background-repeat: no-repeat;
+  background-position: 22px 21px;
 }
