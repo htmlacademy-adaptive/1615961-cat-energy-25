@@ -1,0 +1,33 @@
+.main-welcome {
+  background: linear-gradient(#68b738 30%,#ffffff 40%, #ffffff 100%);
+  background-image: url("/source/img/background-main.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.main-welcome__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.main-welcome__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.main-welcome__button {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #68b738;
+  padding: 7px 44px;
+}
