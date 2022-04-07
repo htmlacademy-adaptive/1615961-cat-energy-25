@@ -1,13 +1,23 @@
+.contacts {
+  padding: 26px 20px;
+}
+
 .contacts__title {
+  display: inline-block;
+  width: 137px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .contacts__address {
+  display: inline-block;
+  width: 139px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
 }

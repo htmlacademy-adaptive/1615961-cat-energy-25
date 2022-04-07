@@ -1,11 +1,13 @@
 .results {
   background-color: #eaeaea;
+  padding: 25px 20px 40px 20px;
 }
 
 .results__title {
   font-size: 36px;
   font-weight: 400;
   line-height: 30px;
+  margin: 0 0 40px 0;
 }
 
 .results__description {
@@ -13,7 +15,18 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: #444444;
+  color: $specialgrey;
+  max-width: 280px;
+  margin: 0;
+}
+
+.results__numbers {
+  display: inline-block;
+  width: 124px;
+
+  &:not(:nth-child(4)) {
+    margin-right: 24px;
+  }
 }
 
 .results__number {
@@ -21,6 +34,7 @@
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .results__text {
@@ -29,6 +43,7 @@
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  text-align: center;
 }
 
 .results__cost {
@@ -36,4 +51,13 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.results__image {
+  margin-bottom: 15px;
+}
+
+.results__results-condition {
+  position: relative;
 }

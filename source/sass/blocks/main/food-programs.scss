@@ -1,11 +1,36 @@
+.food-programs {
+  padding: 20px;
+  position: relative;
+}
+
 .food-programs__less-weight {
   background-image: url("/source/img/less-weight.png");
   background-repeat: no-repeat;
   background-position: 22px 21px;
+  margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 240px;
+      border-bottom: 1px solid #d9d9d9;
+      position: absolute;
+      top: 229px;
+    }
 }
 
 .food-programs__more-weight {
   background-image: url("/source/img/more-weight.svg");
   background-repeat: no-repeat;
-  background-position: 22px 21px;
+  background-position: 13px 24px;
+  margin-bottom: 20px;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 240px;
+      border-bottom: 1px solid #d9d9d9;
+      position: absolute;
+      top: 515px;
+    }
 }

@@ -1,0 +1,33 @@
+.footer {
+  background-color: #f2f2f2;
+  padding: 39px 20px 22px 20px;
+}
+
+.footer__logo-text {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 280px;
+    border-bottom: 1px solid #d9d9d9;
+    position: absolute;
+    top: 90px;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    width: 280px;
+    border-bottom: 1px solid #d9d9d9;
+    position: absolute;
+    top: 148px;
+  }
+}
+
+.footer__social {
+margin-top: 52px;
+}

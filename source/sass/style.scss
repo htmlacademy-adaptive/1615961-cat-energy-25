@@ -1,6 +1,7 @@
 @import "blocks/fonts.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
+@import "blocks/variables.scss";
 // Header
 @import "blocks/header/header.scss";
 @import "blocks/header/navigation.scss";
@@ -28,5 +29,4 @@
 // Footer
 @import "blocks/footer/footer.scss";
 @import "blocks/footer/social.scss";
-
-
+@import "blocks/footer/footer-developer.scss";

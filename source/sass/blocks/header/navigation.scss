@@ -1,12 +1,33 @@
 .navigation__toggle {
+  position: relative;
   margin: 0;
   padding: 0;
   min-width: 24px;
   min-height: 20px;
-  border: 2px solid black;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1.5px solid black;
+  cursor: pointer;
+
+    &::after {
+      content: '';
+      display: block;
+      min-width: 24px;
+      border-bottom: 1.5px solid black;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      display: block;
+      min-width: 24px;
+      border-top: 1.5px solid black;
+    }
 }
 
 .navigation__list {
+  display: none;
   list-style-type: none;
   margin: 0;
   padding: 0;
