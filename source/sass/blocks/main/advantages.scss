@@ -1,0 +1,31 @@
+.advantages {
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  &__usefully {
+    background-image: url(/source/img/green-background-1.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &__simple {
+    background-image: url(/source/img/green-background-2.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &__method {
+    background-image: url(/source/img/green-background-3.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  &__result {
+    background-image: url(/source/img/green-background-4.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+}
