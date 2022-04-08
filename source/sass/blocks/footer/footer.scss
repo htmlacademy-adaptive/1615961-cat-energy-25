@@ -1,6 +1,12 @@
 .footer {
   background-color: #f2f2f2;
   padding: 39px 20px 22px 20px;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      padding: 58px 30px 55px 30px;
+    }
 }
 
 .footer__logo-text {
@@ -16,6 +22,10 @@
     border-bottom: 1px solid #d9d9d9;
     position: absolute;
     top: 90px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &::before {
@@ -25,9 +35,22 @@
     border-bottom: 1px solid #d9d9d9;
     position: absolute;
     top: 148px;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 140px;
   }
 }
 
 .footer__social {
 margin-top: 52px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }

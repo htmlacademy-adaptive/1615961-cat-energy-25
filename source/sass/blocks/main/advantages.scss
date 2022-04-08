@@ -3,6 +3,18 @@
   min-height: 380px;
   margin: 0 auto;
   padding: 0 20px 49px 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+      padding: 0 30px;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 708px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+    }
 }
 
 .advantages__title {
@@ -10,15 +22,28 @@
   line-height: 40px;
   font-weight: 400;
   margin: 0 0 40px 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 32px 0;
+      font-size: 60px;
+      line-height: 60px;
+    }
 }
 
 .advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 250px 250px;
+      gap: 37px 137px;
+    }
 }
 
 .advantages__item {
+  box-sizing: border-box;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -30,27 +55,56 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+    min-height: 280px;
+    padding: 151px 0 57px 0;
+  }
 }
 
 .advantages__item--usefully {
   background-image: url(/source/img/green-background-1.svg);
   background-repeat: no-repeat;
+  background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url(/source/img/img-tablet/green-background-1.svg), url(/source/img/img-tablet/1.svg);
+      background-position: 0 40px, 118px 40px;
+    }
 }
 
 .advantages__item--simple {
   background-image: url(/source/img/green-background-2.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url(/source/img/img-tablet/green-background-2.svg), url(/source/img/img-tablet/2.svg);
+      background-position: 0 40px, 118px 40px;
+    }
 }
 
 .advantages__item--method {
   background-image: url(/source/img/green-background-3.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url(/source/img/img-tablet/green-background-3.svg), url(/source/img/img-tablet/3.svg);
+      background-position: 0 40px, 118px 40px;
+    }
 }
 
 .advantages__item--result {
   background-image: url(/source/img/green-background-4.svg);
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url(/source/img/img-tablet/green-background-4.svg), url(/source/img/img-tablet/4.svg);
+      background-position: 0 40px, 118px 40px;
+    }
 }

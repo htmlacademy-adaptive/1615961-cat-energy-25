@@ -5,4 +5,8 @@
   width: 132px;
   padding: 0;
   margin: 0 auto 43px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

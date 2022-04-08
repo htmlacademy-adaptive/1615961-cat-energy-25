@@ -1,3 +1,9 @@
+.navigation {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .navigation__toggle {
   position: relative;
   margin: 0;
@@ -24,6 +30,10 @@
       min-width: 24px;
       border-top: 1.5px solid black;
     }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
 }
 
 .navigation__list {
@@ -31,6 +41,17 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      width: 440px;
+    }
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 34px;
+  }
 }
 
 .navigation__link {
@@ -40,4 +61,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+    }
 }

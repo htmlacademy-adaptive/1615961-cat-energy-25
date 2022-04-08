@@ -1,5 +1,10 @@
 .footer-developer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 280px;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+    }
 }

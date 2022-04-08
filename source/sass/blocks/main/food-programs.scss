@@ -1,6 +1,10 @@
 .food-programs {
   padding: 20px;
   position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding: 20px 30px;
+    }
 }
 
 .food-programs__less-weight {
@@ -16,6 +20,16 @@
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
       top: 229px;
+
+        @media (min-width: $tablet-width) {
+          display: none;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/source/img/img-tablet/less-weight.svg");
+      background-repeat: no-repeat;
+      background-position: 446px 92px;
     }
 }
 
@@ -32,5 +46,15 @@
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
       top: 515px;
+
+        @media (min-width: $tablet-width) {
+          display: none;
+        }
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("/source/img/img-tablet/more-weight.svg");
+      background-repeat: no-repeat;
+      background-position: 412px 91px;
     }
 }

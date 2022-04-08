@@ -5,6 +5,13 @@
   min-height: 266px;
   background-color: #f2f2f2;
   padding: 21px 33px 18px 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+      padding: 14px 26px 57px 26px;
+      font-size: 20px;
+      line-height: 20px;
+    }
 }
 
 .food-program__title {
@@ -13,6 +20,14 @@
   font-weight: 400;
   margin: 9px auto 29px 71px;
   text-transform: uppercase;
+  width: 137px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin: 63px auto 24px 27px;
+      width: 200px;
+    }
 }
 
 .food-program__description {
@@ -22,10 +37,25 @@
   font-weight: 400;
   color: $specialgrey;
   margin: 0 0 38px 0;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      width: 340px;
+      margin: 0 auto 48px 27px;
+    }
 }
 
 .food-program__link {
+  font-display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 150px;
+      margin: 0 0 0 27px;
+    }
 }
