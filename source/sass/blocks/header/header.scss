@@ -9,12 +9,30 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    min-height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    background: linear-gradient(to right, #ffffff 50%, $basicgreen 70%);
+    min-height: 150px;
+    padding: 0 110px;
+  }
+}
+
+.header__logo-image {
+  @media (min-width: $desktop-width) {
+
   }
 }
 
 .header__logo-text {
   @media (min-width: $tablet-width) {
     margin-right: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 540px;
   }
 }
 

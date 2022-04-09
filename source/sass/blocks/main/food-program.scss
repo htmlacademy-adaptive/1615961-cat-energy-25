@@ -9,8 +9,15 @@
     @media (min-width: $tablet-width) {
       width: 708px;
       padding: 14px 26px 57px 26px;
-      font-size: 20px;
-      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+      padding: 77px 51px 55px 52px;
+
+      &:not(:last-child){
+        margin-right: 80px;
+      }
     }
 }
 
@@ -26,7 +33,11 @@
       font-size: 36px;
       line-height: 36px;
       margin: 63px auto 24px 27px;
-      width: 200px;
+      width: 210px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 73px 162px;
     }
 }
 
@@ -44,6 +55,11 @@
       width: 340px;
       margin: 0 auto 48px 27px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 467px;
+      margin: 0 0 23px 0px;
+    }
 }
 
 .food-program__link {
@@ -57,5 +73,10 @@
       line-height: 30px;
       width: 150px;
       margin: 0 0 0 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 150px;
+      margin: 0;
     }
 }

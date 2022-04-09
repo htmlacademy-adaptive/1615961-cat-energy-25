@@ -7,7 +7,17 @@
 
     @media (min-width: $tablet-width) {
       padding: 62px 237px 10px 117px;
+      min-height: 850px;
+      background-image: url("/source/img/img-tablet/main-can.png");
+      background-position: 0 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 20px 110px 10px 110px;
       background-image: none;
+      min-height: 530px;
+      background-image: url("/source/img/img-desktop/main-can.png"), url("/source/img/img-desktop/rectangle.png"), url("/source/img/img-desktop/cat-background.jpg");
+      background-position: 550px 30px, 720px 0px, 720px 0;
     }
 }
 
@@ -30,6 +40,10 @@
       margin: 0 0 41px 0;
       text-align: left;
     }
+
+    @media (min-width: $desktop-width) {
+      margin: 40px 0 40px 80px;
+    }
 }
 
 .main-welcome__text {
@@ -50,6 +64,10 @@
       width: 416px;
       margin: 0 0 20px 0;
       text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 52px 80px;
     }
 }
 
@@ -87,4 +105,14 @@
       font-size: 20px;
       line-height: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 80px;
+    }
+}
+
+.main-welcome__image {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
