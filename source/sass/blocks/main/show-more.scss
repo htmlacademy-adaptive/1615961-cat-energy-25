@@ -1,29 +1,26 @@
-.show-more {
+.show-more__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  &__title {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.show-more__description {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
 
-  &__description {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #444444;
-  }
-
-  &__button {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #444444;
-    background-color: #f2f2f2;
-    padding: 10px 94px;
-  }
+.show-more__button {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #444444;
+  background-color: #f2f2f2;
+  padding: 10px 94px;
 }
