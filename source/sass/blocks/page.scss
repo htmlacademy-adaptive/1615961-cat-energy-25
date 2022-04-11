@@ -4,13 +4,25 @@
   margin: 0 auto;
   background-color: #ffffff;
 
-    &__body {
-      font-family: "Oswald", sans-serif;
-      font-size: 16px;
-      line-height: 16px;
-      color: #000000;
-      background-color: #ffffff;
-      margin: 0 auto;
-      min-height: 100%;
+    @media (min-width: 768px) {
+      width: 768px;
     }
+
+    @media (min-width: 1440px) {
+      width: 1440px;
+    }
+}
+
+.page__body {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.page__footer {
+  position: relative;
 }

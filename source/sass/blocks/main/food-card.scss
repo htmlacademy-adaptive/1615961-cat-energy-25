@@ -1,37 +1,35 @@
-.food-card {
-  &__name {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: #222222;
-  }
+.food-card__name {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
 
-  &__property {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #444444;
-  }
+.food-card__property {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
 
-  &__meaning {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #444444;
-  }
+.food-card__meaning {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
 
-  &__order {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #68b738;
-    padding: 10px 109px;
-  }
+.food-card__order {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $basicgreen;
+  padding: 10px 109px;
 }

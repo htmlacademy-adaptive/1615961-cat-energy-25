@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -9,6 +10,8 @@
     <header class="header">
       <a class="header__logo-image" href="index.html">
         <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип сайта.">
+      </a>
+      <a class="header__logo-text" href="index.html">
         <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
       </a>
       <nav class="navigation">
@@ -29,10 +32,12 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-container__title">Функциональное питание для котов</h1>
-      <p class="main-container__text">Занялся собой? Займись котом!</p>
-      <img src="img/can-mobile.png" width="280" height="270" alt="Банка с кормом Cat Energy со вкусом курицы.">
-      <a class="main-container__button" href="form.html">Подобрать программу</a>
+      <section class="main-welcome">
+        <h1 class="main-welcome__title">Функциональное питание для котов</h1>
+        <p class="main-welcome__text">Занялся собой? Займись котом!</p>
+        <img class="main-welcome__image" src="img/can-mobile.png" width="280" height="270" alt="Банка с кормом Cat Energy со вкусом курицы.">
+        <a class="main-welcome__button" href="form.html">Подобрать программу</a>
+      </section>
       <section class="food-programs">
         <h2 class="visually-hidden">Программы питания</h2>
         <div class="food-programs__less-weight food-program">
@@ -48,26 +53,29 @@
       </section>
       <section class="advantages">
         <h2 class="advantages__title">Как это работает?</h2>
-        <p class="advantages__description advantages__usefully">Функциональное питание содержит только полезные питательные вещества.</p>
-        <p class="advantages__description advantages__simple">Выпускается в виде порошка, который нужно лишь залить кипятком, и готово.</p>
-        <p class="advantages__description advantages__method">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        <p class="advantages__description advantages__result">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+        <ol class="advantages__list">
+          <li class="advantages__item advantages__item--usefully">Функциональное питание содержит только полезные питательные вещества.</li>
+          <li class="advantages__item advantages__item--simple">Выпускается в виде порошка, который нужно лишь залить кипятком, и готово.</li>
+          <li class="advantages__item advantages__item--method">Замените один-два приема обычной еды на наше функциональное питание.</li>
+          <li class="advantages__item advantages__item--result">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        </ol>
       </section>
       <section class="results">
         <h2 class="results__title">Живой пример</h2>
         <p class="results__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="results__numbers">
+        <div class="results__numbers results__numbers--weight">
           <p class="results__number">5 кг</p>
           <p class="results__text">Снижение веса</p>
         </div>
-        <div class="results__numbers">
+        <div class="results__numbers results__numbers--time">
           <p class="results__number">60 дней</p>
           <p class="results__text">Затрачено времени</p>
         </div>
-        <p class="results__cost">Затраты на питание: 15 000 руб.</p>
+        <p class="results__cost results__cost--text">Затраты на питание:</p>
+        <p class="results__cost results__cost--number">15 000 руб.</p>
         <img class="results__image" src="img/cat-before-mobile.png" alt="Изображение кота до перехода на корм Cat Energy.">
-        <div class="results-condition">
-          <button class="results-condition__button" type="button">Было</button>
+        <div class="results__results-condition results-condition">
+          <button class="results-condition__button results-condition__button--before" type="button">Было</button>
           <button class="results-condition__button" type="button">Стало</button>
         </div>
       </section>
@@ -76,7 +84,7 @@
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="page__footer footer">
       <a class="footer__logo-text" href="index.html">
         <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
       </a>
@@ -109,10 +117,14 @@
           </li>
         </ul>
       </section>
-      <a class="footer__developer" href="https://htmlacademy.ru">
-        <img src="img/icons/html-academy-text.svg" width="114" height="18" alt="Логотип HTML Academy.">
-        <img src="img/icons/html-academy.svg" width="27" height="34" alt="">
-      </a>
+      <section class="footer-developer">
+        <a class="footer-developer__link" href="https://htmlacademy.ru">
+          <img src="img/icons/html-academy-text.svg" width="114" height="18" alt="Текстовый логотип HTML Academy.">
+        </a>
+        <a class="footer-developer__link" href="https://htmlacademy.ru">
+          <img src="img/icons/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy.">
+        </a>
+      </section>
     </footer>
   </body>
 </html>
