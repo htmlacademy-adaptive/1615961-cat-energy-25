@@ -65,6 +65,8 @@
   max-width: 199px;
   min-height: 60px;
   padding: 2px 0 0 80px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -85,45 +87,37 @@
 }
 
 .advantages__item--usefully {
-  background-image: url(/source/img/green-background-1.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/green-background-1.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url(/source/img/img-tablet/green-background-1.svg), url(/source/img/img-tablet/1.svg);
+      background-image: url("../img/img-tablet/green-background-1.svg"), url("../img/img-tablet/1.svg");
       background-position: 0 40px, 118px 40px;
     }
 }
 
 .advantages__item--simple {
-  background-image: url(/source/img/green-background-2.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/green-background-2.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url(/source/img/img-tablet/green-background-2.svg), url(/source/img/img-tablet/2.svg);
+      background-image: url("../img/img-tablet/green-background-2.svg"), url("../img/img-tablet/2.svg");
       background-position: 0 40px, 118px 40px;
     }
 }
 
 .advantages__item--method {
-  background-image: url(/source/img/green-background-3.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/green-background-3.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url(/source/img/img-tablet/green-background-3.svg), url(/source/img/img-tablet/3.svg);
+      background-image: url("../img/img-tablet/green-background-3.svg"), url("../img/img-tablet/3.svg");
       background-position: 0 40px, 118px 40px;
     }
 }
 
 .advantages__item--result {
-  background-image: url(/source/img/green-background-4.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  background-image: url("../img/green-background-4.svg");
 
     @media (min-width: $tablet-width) {
-      background-image: url(/source/img/img-tablet/green-background-4.svg), url(/source/img/img-tablet/4.svg);
+      background-image: url("../img/img-tablet/green-background-4.svg"), url("../img/img-tablet/4.svg");
       background-position: 0 40px, 118px 40px;
     }
 }
