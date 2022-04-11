@@ -1,9 +1,17 @@
+.extra-cards {
+  width: 280px;
+  padding: 20px;
+}
+
 .extra-cards__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .extra-cards__title {
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  text-align: left;
 }

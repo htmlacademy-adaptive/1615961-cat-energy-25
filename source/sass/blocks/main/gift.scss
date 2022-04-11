@@ -1,15 +1,22 @@
 .gift {
   width: 280px;
   min-height: 290px;
-  background-image: url('../img/background-catalog.jpg');
+  padding: 0 20px;
+  background-image: url("../img/icons/icon-gift.svg"), url('../img/background-catalog.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 121px 59px, center;
+  position: relative;
 }
 
 .gift__title {
+  position: absolute;
+  top: 187px;
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
+  width: 161px;
+  margin: auto auto auto 58px;
 }
