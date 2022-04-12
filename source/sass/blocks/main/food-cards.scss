@@ -1,5 +1,31 @@
 .food-cards {
-  &__list {
-    list-style-type: none;
-  }
+  width: 280px;
+  padding: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 708px;
+      padding: 82px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+      padding: 84px 110px;
+    }
 }
+
+.food-cards__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+      @media (min-width: $tablet-width) {
+        display: grid;
+        grid-template-columns: 324px 324px;
+        gap: 60px;
+      }
+
+      @media (min-width: $desktop-width) {
+        grid-template-columns: 245px 245px 245px 245px;
+        gap: 63px 80px;
+      }
+  }

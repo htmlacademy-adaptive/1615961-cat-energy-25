@@ -1,0 +1,118 @@
+.main-welcome {
+  background: linear-gradient(#68b738 30%,#ffffff 40%, #ffffff 100%);
+  background-image: url("../img/rectangle-opacity.png"), url("../img/background-main.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 27px 35px 10px 36px;
+
+    @media (min-width: $tablet-width) {
+      padding: 62px 237px 10px 117px;
+      min-height: 850px;
+      background-image: url("../img/img-tablet/main-can.png");
+      background-position: 0 250px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 20px 110px 10px 110px;
+      background-image: none;
+      min-height: 530px;
+      background-image: url("../img/img-desktop/main-can.png"), url("../img/img-desktop/rectangle.png"), url("../img/img-desktop/cat-background.jpg");
+      background-position: 550px 30px, 720px 0px, 720px 0;
+    }
+}
+
+.main-welcome__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  width: 250px;
+  margin: 0 0 25px 0;
+  padding: 0;
+  text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+      width: 416px;
+      margin: 0 0 41px 0;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 40px 0 40px 80px;
+    }
+}
+
+.main-welcome__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 250px;
+  margin: 0 0 29px 0;
+
+    @media (min-width: $tablet-width) {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      color: #000000;
+      width: 416px;
+      margin: 0 0 20px 0;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 52px 80px;
+    }
+}
+
+.main-welcome__button {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $basicgreen;
+  max-width: 280px;
+  padding: 7px 44px;
+  cursor: pointer;
+
+    &:focus {
+      outline: 1px solid $basicdarkgreen;
+      outline-offset: 1px;
+    }
+
+    &:hover {
+      background-color: $basicdarkgreen;
+    }
+
+    &:active {
+      background-color: $basicdarkgreen;
+      color: rgba(256, 256, 256, 0.3);
+      outline: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      max-width: 244px;
+      padding: 14px 26px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 80px;
+    }
+}
+
+.main-welcome__image {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

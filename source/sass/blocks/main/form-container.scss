@@ -1,13 +1,32 @@
-.form-container {
-  &__title {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-  }
+.form-container__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
 
-  &__description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-  }
+   @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 0 39px;
+    width: 708px;
+   }
+
+   @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 1220px;
+    padding: 0 30px;
+   }
+}
+
+.form-container__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 324px;
+      margin: 0 0 0 39px;
+    }
 }

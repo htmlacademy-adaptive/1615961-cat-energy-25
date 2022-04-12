@@ -1,11 +1,11 @@
 @import "blocks/fonts.scss";
 @import "blocks/visually-hidden.scss";
 @import "blocks/page.scss";
+@import "blocks/variables.scss";
 // Header
 @import "blocks/header/header.scss";
 @import "blocks/header/navigation.scss";
 // Main
-@import "blocks/main/advantages.scss";
 @import "blocks/main/advantages.scss";
 @import "blocks/main/cat-parameters.scss";
 @import "blocks/main/catalog-container.scss";
@@ -22,11 +22,11 @@
 @import "blocks/main/form-container.scss";
 @import "blocks/main/gift.scss";
 @import "blocks/main/main-container.scss";
+@import "blocks/main/main-welcome.scss";
 @import "blocks/main/results-condition.scss";
 @import "blocks/main/results.scss";
 @import "blocks/main/show-more.scss";
 // Footer
 @import "blocks/footer/footer.scss";
 @import "blocks/footer/social.scss";
-
-
+@import "blocks/footer/footer-developer.scss";

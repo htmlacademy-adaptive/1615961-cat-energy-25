@@ -1,21 +1,97 @@
 .extra-card {
-  &__title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 622px 244px;
+    gap: 38px 0;
+  }
+}
+
+.extra-card__data {
+  display: grid;
+  grid-template-columns: 150px 130px;
+  grid-row-gap: 13px;
+  margin: 16px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 300px 239px 93px;
+      grid-row-gap: 0;
+      margin-left: 38px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 324px 132px 156px;
+      margin: 0;
+    }
+}
+
+.extra-card__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+}
+
+.extra-card__property {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+    @media (min-width: $tablet-width) {
+      text-align: end;
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+    }
+}
+
+.extra-card__meaning {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: end;
+  margin: 0;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+    @media (min-width: $tablet-width) {
+      text-align: end;
+      grid-column: 3 / 4;
+      grid-row: 1 / 2;
+    }
+}
+
+.extra-card__order {
+  box-sizing: border-box;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $basicgreen;
+  padding: 10px 109px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 220px;
+    // min-width: 632px;
+    margin-left: 38px;
   }
 
-  &__property {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  &__meaning {
-    font-family: 'Arial', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 14px;
+  @media (min-width: $desktop-width) {
+    padding: 7px 26px;
+    max-width: 244px;
+    margin-left: 0;
   }
 }
