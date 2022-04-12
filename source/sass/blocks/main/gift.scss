@@ -1,15 +1,46 @@
 .gift {
   width: 280px;
   min-height: 290px;
-  background-image: url('/source/img/background-catalog.jpg');
+  background-image: url("../img/icons/icon-gift.svg"), url('../img/background-catalog.jpg');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 101px 59px, center;
+  position: relative;
+
+    @media (min-width: $tablet-width) {
+      width: 707px;
+      min-height: 200px;
+      padding: 0;
+      background-image: url("../img/icons/icon-gift.svg"), url("../img/img-tablet/green-background-gift.jpg");
+      background-position: 77px 57px, center;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      min-height: 288px;
+      padding: 0;
+      background-image: url("../img/icons/icon-gift.svg"), url("../img/img-desktop/green-background-gift.jpg");
+    }
 }
 
 .gift__title {
+  position: absolute;
+  top: 187px;
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-align: center;
+  width: 161px;
+  margin: auto auto auto 58px;
+
+    @media (min-width: $tablet-width) {
+      top: 71px;
+      left: 422px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 171px;
+      left: -15px;
+    }
 }

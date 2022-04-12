@@ -1,3 +1,52 @@
+.cat-parameters {
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 30px;
+  }
+}
+
+.cat-parameters__common {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 570px;
+  }
+}
+
+.cat-parameters__wishes {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    width: 570px;
+  }
+}
+
+.cat-parameters__list {
+  list-style-type: none;
+}
+
+.cat-parameters__list--owner {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 580px);
+  }
+}
+
+.cat-parameters__list--additional {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 265px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 221px);
+  }
+}
+
 .cat-parameters__text {
   font-weight: 400;
   font-size: 16px;
@@ -23,6 +72,12 @@
   background-color: $basicgreen;
   padding: 7px 44px;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 13px 45px;
+  }
 }
 
 .cat-parameters__notice {
@@ -30,4 +85,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
 }
