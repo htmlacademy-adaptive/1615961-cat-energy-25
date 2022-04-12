@@ -6,6 +6,14 @@
    @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin: 0 0 0 39px;
+    width: 708px;
+   }
+
+   @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 1220px;
+    padding: 0 30px;
    }
 }
 
@@ -19,5 +27,6 @@
       font-size: 20px;
       line-height: 30px;
       width: 324px;
+      margin: 0 0 0 39px;
     }
 }
