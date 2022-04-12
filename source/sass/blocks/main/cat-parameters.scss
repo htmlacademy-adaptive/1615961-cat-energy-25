@@ -28,6 +28,14 @@
   list-style-type: none;
 }
 
+.cat-parameters__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.cat-parameters__control {
+  position: relative;
+}
+
 .cat-parameters__list--owner {
   @media (min-width: $desktop-width) {
     display: grid;
@@ -53,6 +61,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+    &--radio {
+      margin-left: 40px;
+    }
 }
 
 .cat-parameters__legend {

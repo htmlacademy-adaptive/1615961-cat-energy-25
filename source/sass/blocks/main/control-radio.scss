@@ -1,0 +1,23 @@
+.control-radio__mark {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  top: -5px;
+}
+
+.control-radio:checked + .control-radio__mark::after {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $basicgreen;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
