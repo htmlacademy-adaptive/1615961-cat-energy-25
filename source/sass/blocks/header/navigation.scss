@@ -52,6 +52,24 @@
       width: 640px;
     }
 }
+// В этом блоке начата работа над выпадающим меню без JS.
+
+// .navigation__toggle:hover + .navigation__list {
+//   display: block;
+//   position: absolute;
+//   background-color: #ffffff;
+//   width: 100%;
+//   top: 50px;
+// }
+
+// .navigation__list:hover {
+//   display: block;
+//   position: absolute;
+//   background-color: #ffffff;
+//   top: 50px;
+//   width: 100%;
+// }
+
 
 .navigation__item {
   &:not(:last-child) {
