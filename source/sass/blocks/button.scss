@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: $basicgreen;
+  text-align: center;
+
+  &:focus {
+    outline: 1px solid $basicdarkgreen;
+    outline-offset: 1px;
+  }
+
+  &:hover {
+    background-color: $basicdarkgreen;
+  }
+
+  &:active {
+    background-color: $basicdarkgreen;
+    color: rgba(256, 256, 256, 0.3);
+    outline: none;
+  }
+}

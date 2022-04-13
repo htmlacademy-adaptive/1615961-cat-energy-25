@@ -41,19 +41,19 @@
             <li class="cat-parameters__item">
               <label class="cat-parameters__control">
                 <span class="cat-parameters__text">Имя:*</span>
-                <input class="control-input" type="text" name="cat-name" value="Барсик" required>
+                <input class="control-input control-input--name" type="text" name="cat-name" placeholder="Барсик" required>
               </label>
             </li>
             <li class="cat-parameters__item">
               <label class="cat-parameters__control">
                 <span class="cat-parameters__text">Вес (кг):*</span>
-                <input class="control-input" type="number" name="cat-weight" value="7" required>
+                <input class="control-input control-input--weight" type="number" name="cat-weight" placeholder="7" required>
               </label>
             </li>
             <li class="cat-parameters__item">
               <label class="cat-parameters__control">
                 <span class="cat-parameters__text">Возраст (лет):</span>
-                <input class="control-input" type="number" name="cat-age" value="7">
+                <input class="control-input control-input--age" type="number" name="cat-age" placeholder="7">
               </label>
             </li>
           </ul>
@@ -61,21 +61,21 @@
         <fieldset class="cat-parameters__wishes">
           <legend class="visually-hidden">Желаемая программа питания</legend>
           <ul class="cat-parameters__list">
-            <li class="cat-parameters__item">
+            <li class="cat-parameters__item cat-parameters__item--radio">
               <label class="cat-parameters__control">
                 <input class="control-radio visually-hidden" type="radio" name="program-variant" value="less-weight" checked>
                 <span class="control-radio__mark"></span>
                 <span class="cat-parameters__text cat-parameters__text--radio">Похудение</span>
               </label>
             </li>
-            <li class="cat-parameters__item">
+            <li class="cat-parameters__item cat-parameters__item--radio">
               <label class="cat-parameters__control">
                 <input class="control-radio visually-hidden" type="radio" name="program-variant" value="more-weight">
                 <span class="control-radio__mark"></span>
                 <span class="cat-parameters__text cat-parameters__text--radio">Набор массы</span>
               </label>
             </li>
-            <li class="cat-parameters__item">
+            <li class="cat-parameters__item cat-parameters__item--radio">
               <label class="cat-parameters__control">
                 <input class="control-radio visually-hidden" type="radio" name="program-variant" value="want-ask">
                 <span class="control-radio__mark"></span>
@@ -85,53 +85,57 @@
           </ul>
         </fieldset>
         <fieldset class="cat-parameters__owner">
-          <legend class="cat-parameters__legend">Контактные данные (владельца кота)</legend>
+          <legend class="cat-parameters__legend cat-parameters__legend--contacts">Контактные данные (владельца кота)</legend>
           <ul class="cat-parameters__list cat-parameters__list--owner">
             <li class="cat-parameters__item">
               <label class="cat-parameters__control">
                 <span class="cat-parameters__text">E-mail:*</span>
-                <input class="control-input" type="email" name="cat-name" value="kuklachev@gmail.com" required>
+                <input class="control-input control-input--email" type="email" name="cat-name" placeholder="kuklachev@gmail.com" required>
               </label>
             </li>
             <li class="cat-parameters__item">
               <label class="cat-parameters__control">
                 <span class="cat-parameters__text">Телефон:*</span>
-                <input class="control-input" type="tel" name="cat-name" value="8 (960) 900-60-90" required>
+                <input class="control-input control-input--phone" type="tel" name="cat-name" placeholder="8 (960) 900-60-90" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="cat-parameters__comment">
-          <legend class="cat-parameters__legend">Комментарий</legend>
+          <legend class="cat-parameters__legend cat-parameters__legend--comments">Комментарий</legend>
           <label class="cat-parameters__control">
-            <input class="control-input" type="text" name="cat-name" value="Расскажите обо всех повадках кота" required>
+            <input class="control-input control-input--comment" type="text" name="cat-name" placeholder="Расскажите обо всех повадках кота" required>
           </label>
         </fieldset>
         <fieldset class="cat-parameters__additional">
           <legend class="cat-parameters__legend">Дополнительно</legend>
           <ul class="cat-parameters__list cat-parameters__list--additional">
-            <li class="cat-parameters__item">
+            <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
                 <input class="control-checkbox" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
-                <span class="cat-parameters__text">Сахарозаменитель</span>
+                <span class="control-checkbox__mark"></span>
+                <span class="cat-parameters__text cat-parameters__text--checkbox">Сахарозаменитель</span>
               </label>
             </li>
-            <li class="cat-parameters__item">
+            <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
                 <input class="control-checkbox" type="checkbox" name="water" value="water">
-                <span class="cat-parameters__text">Питьевая вода</span>
+                <span class="control-checkbox__mark"></span>
+                <span class="cat-parameters__text cat-parameters__text--checkbox">Питьевая вода</span>
               </label>
             </li>
-            <li class="cat-parameters__item">
+            <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
                 <input class="control-checkbox" type="checkbox" name="milk" value="milk">
-                <span class="cat-parameters__text">Молоко</span>
+                <span class="control-checkbox__mark"></span>
+                <span class="cat-parameters__text cat-parameters__text--checkbox">Молоко</span>
               </label>
             </li>
-            <li class="cat-parameters__item">
+            <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
                 <input class="control-checkbox" type="checkbox" name="vitamines" value="vitamines">
-                <span class="cat-parameters__text">Витамины</span>
+                <span class="control-checkbox__mark"></span>
+                <span class="cat-parameters__text cat-parameters__text--checkbox">Витамины</span>
               </label>
             </li>
           </ul>
@@ -139,7 +143,7 @@
         <button class="cat-parameters__button button" type="submit">
           Отправить заявку
         </button>
-        <p class="cat-parameters__notice">*—Обязательное поле</p>
+        <p class="cat-parameters__notice">* — Обязательное поле</p>
       </form>
       <section class="contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
