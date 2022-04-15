@@ -2,18 +2,18 @@
   width: 280px;
   padding: 20px;
 
-    @media (min-width: $tablet-width) {
-      width: 708px;
-      padding: 30px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 30px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 896px;
-      padding: 30px 110px;
-      display: grid;
-      grid-template-columns: 900px 245px;
-      grid-column-gap: 79px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    padding: 30px 110px;
+    display: grid;
+    grid-template-columns: 900px 245px;
+    grid-column-gap: 79px;
+  }
 }
 
 .extra-cards__list {
@@ -21,14 +21,13 @@
   margin: 0 0 35px 0;
   padding: 0;
 
-    @media (min-width: $desktop-width) {
-      max-width: 900px;
-    }
+  @media (min-width: $desktop-width) {
+    max-width: 900px;
+  }
 }
 
 .extra-cards__item {
   @media (min-width: $desktop-width) {
-
     &:not(:last-child) {
       margin-bottom: 32px;
     }
@@ -41,13 +40,13 @@
   line-height: 24px;
   text-align: left;
 
-    @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
-      margin-left: 38px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 38px;
+  }
 
-    @media (min-width: $tablet-width) {
-      grid-column: 1 / -1;
-    }
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
 }

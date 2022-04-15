@@ -2,13 +2,13 @@
   display: grid;
   grid-template-columns: 140px 141px;
 
-    &:not(:last-child) {
-      margin-bottom: 19px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .food-card__image {

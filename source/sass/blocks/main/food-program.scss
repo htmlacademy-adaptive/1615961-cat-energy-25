@@ -6,19 +6,19 @@
   background-color: #f2f2f2;
   padding: 21px 33px 18px 20px;
 
-    @media (min-width: $tablet-width) {
-      width: 708px;
-      padding: 14px 26px 57px 26px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 14px 26px 57px 26px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 570px;
-      padding: 77px 51px 55px 52px;
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 77px 51px 55px 52px;
 
-      &:not(:last-child) {
-        margin-right: 80px;
-      }
+    &:not(:last-child) {
+      margin-right: 80px;
     }
+  }
 }
 
 .food-program__title {
@@ -29,16 +29,16 @@
   text-transform: uppercase;
   width: 137px;
 
-    @media (min-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 36px;
-      margin: 63px auto 24px 27px;
-      width: 210px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 63px auto 24px 27px;
+    width: 210px;
+  }
 
-    @media (min-width: $desktop-width) {
-      margin: 0 0 73px 162px;
-    }
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 162px;
+  }
 }
 
 .food-program__description {
@@ -49,17 +49,17 @@
   color: $specialgrey;
   margin: 0 0 38px 0;
 
-    @media (min-width: $tablet-width) {
-      font-size: 16px;
-      line-height: 24px;
-      width: 340px;
-      margin: 0 auto 48px 27px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 340px;
+    margin: 0 auto 48px 27px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 467px;
-      margin: 0 0 23px 0;
-    }
+  @media (min-width: $desktop-width) {
+    width: 467px;
+    margin: 0 0 23px 0;
+  }
 }
 
 .food-program__link {
@@ -69,15 +69,15 @@
   color: #000000;
   margin-right: 15px;
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-      width: 150px;
-      margin: 0 25px 0 27px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 150px;
+    margin: 0 25px 0 27px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 150px;
-      margin: 0 28px 0 0;
-    }
+  @media (min-width: $desktop-width) {
+    width: 150px;
+    margin: 0 28px 0 0;
+  }
 }

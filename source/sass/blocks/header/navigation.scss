@@ -17,25 +17,25 @@
   border-bottom: 1.5px solid #000000;
   cursor: pointer;
 
-    &::after {
-      content: "";
-      display: block;
-      min-width: 24px;
-      border-bottom: 1.5px solid #000000;
-    }
+  &::after {
+    content: "";
+    display: block;
+    min-width: 24px;
+    border-bottom: 1.5px solid #000000;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -1px;
-      display: block;
-      min-width: 24px;
-      border-top: 1.5px solid #000000;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    display: block;
+    min-width: 24px;
+    border-top: 1.5px solid #000000;
+  }
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__toggle--close {
@@ -48,52 +48,52 @@
   background-color: transparent;
   cursor: pointer;
 
-    &::after {
-      content: "";
-      display: block;
-      min-width: 24px;
-      border-bottom: 1.5px solid #000000;
-      transform: rotate(-45deg);
-    }
+  &::after {
+    content: "";
+    display: block;
+    min-width: 24px;
+    border-bottom: 1.5px solid #000000;
+    transform: rotate(-45deg);
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 9px;
-      display: block;
-      min-width: 24px;
-      border-top: 1.5px solid #000000;
-      transform: rotate(45deg);
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    display: block;
+    min-width: 24px;
+    border-top: 1.5px solid #000000;
+    transform: rotate(45deg);
+  }
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__list {
   list-style-type: none;
 
-    @media (max-width: $mobile-width-only) {
-      position: absolute;
-      left: -276px;
-      top: 45px;
-      width: 320px;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: -276px;
+    top: 45px;
+    width: 320px;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
 
-    @media (min-width: $tablet-width) {
-      position: static;
-      display: flex;
-      width: 440px;
-    }
+  @media (min-width: $tablet-width) {
+    position: static;
+    display: flex;
+    width: 440px;
+  }
 
-    @media (min-width: $desktop-width) {
-      display: flex;
-      width: 640px;
-    }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 640px;
+  }
 }
 
 .navigation__item {
@@ -106,9 +106,9 @@
     margin: 0;
     border-top: 1px solid #e6e6e6;
 
-      &:last-child {
-        border-bottom: 1px solid #e6e6e6;
-      }
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -126,39 +126,39 @@
   text-transform: uppercase;
   color: #000000;
 
-    @media (max-width: $mobile-width-only) {
-      padding: 22px;
+  @media (max-width: $mobile-width-only) {
+    padding: 22px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 0;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
     }
 
-    @media (min-width: $tablet-width) {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-      padding: 10px 0;
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
 
-      &:hover {
-        color: rgba(0, 0, 0, 0.5);
-      }
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
 
-      &:active {
-        color: rgba(0, 0, 0, 0.3);
-      }
+    &:hover {
+      color: rgba(256, 256, 256, 0.5);
     }
 
-    @media (min-width: $desktop-width) {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 30px;
-      color: #ffffff;
-
-      &:hover {
-        color: rgba(256, 256, 256, 0.5);
-      }
-
-      &:active {
-        color: rgba(256, 256, 256, 0.3);
-      }
+    &:active {
+      color: rgba(256, 256, 256, 0.3);
     }
+  }
 }
 
 .navigation__link--current {

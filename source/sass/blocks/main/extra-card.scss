@@ -12,17 +12,17 @@
   grid-row-gap: 13px;
   margin: 16px;
 
-    @media (min-width: $tablet-width) {
-      display: grid;
-      grid-template-columns: 300px 239px 93px;
-      grid-row-gap: 0;
-      margin-left: 38px;
-    }
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 239px 93px;
+    grid-row-gap: 0;
+    margin-left: 38px;
+  }
 
-    @media (min-width: $desktop-width) {
-      grid-template-columns: 324px 132px 156px;
-      margin: 0;
-    }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 324px 132px 156px;
+    margin: 0;
+  }
 }
 
 .extra-card__title {
@@ -31,10 +31,10 @@
   line-height: 16px;
   text-transform: uppercase;
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 20px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra-card__property {
@@ -46,11 +46,11 @@
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 
-    @media (min-width: $tablet-width) {
-      text-align: end;
-      grid-column: 2 / 3;
-      grid-row: 1 / 2;
-    }
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .extra-card__meaning {
@@ -63,11 +63,11 @@
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 
-    @media (min-width: $tablet-width) {
-      text-align: end;
-      grid-column: 3 / 4;
-      grid-row: 1 / 2;
-    }
+  @media (min-width: $tablet-width) {
+    text-align: end;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
 }
 
 .extra-card__order {
