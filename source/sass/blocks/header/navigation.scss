@@ -14,14 +14,14 @@
   min-height: 20px;
   border: none;
   background-color: transparent;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid #000000;
   cursor: pointer;
 
     &::after {
       content: '';
       display: block;
       min-width: 24px;
-      border-bottom: 1.5px solid black;
+      border-bottom: 1.5px solid #000000;
     }
 
     &::before {
@@ -30,7 +30,7 @@
       top: -1px;
       display: block;
       min-width: 24px;
-      border-top: 1.5px solid black;
+      border-top: 1.5px solid #000000;
     }
 
     @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
       content: '';
       display: block;
       min-width: 24px;
-      border-bottom: 1.5px solid black;
+      border-bottom: 1.5px solid #000000;
       transform: rotate(-45deg);
     }
 
@@ -62,7 +62,7 @@
       top: 9px;
       display: block;
       min-width: 24px;
-      border-top: 1.5px solid black;
+      border-top: 1.5px solid #000000;
       transform: rotate(45deg);
     }
 

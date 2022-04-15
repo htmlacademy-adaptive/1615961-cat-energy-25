@@ -1,5 +1,5 @@
 .main-welcome {
-  background: linear-gradient(#68b738 30%,#ffffff 40%, #ffffff 100%);
+  background: linear-gradient(#68b738 30%, #ffffff 40%, #ffffff 100%);
   background-image: url("../img/rectangle-opacity.png"), url("../img/background-main.jpg");
   background-position: top;
   background-repeat: no-repeat;
@@ -14,7 +14,6 @@
 
     @media (min-width: $desktop-width) {
       padding: 170px 110px 10px 110px;
-      background-image: none;
       min-height: 530px;
       background-image: url("../img/img-desktop/main-can.png"), url("../img/img-desktop/rectangle.png"), url("../img/img-desktop/cat-background.jpg");
       background-position: 550px 180px, 720px 0px, 720px 0;
