@@ -15,8 +15,8 @@
       display: grid;
       grid-template-columns: 200px 240px 193px 1fr;
       width: 1440px;
-      padding: 50px 110px 20px 100px;
-      background: linear-gradient(#ffffff 0%, #ffffff 25%, #f2f2f2 25%, #f2f2f2 100%);
+      padding: 50px 110px 70px 100px;
+      background: linear-gradient(#ffffff 0%, #ffffff 23%, #f2f2f2 23%, #f2f2f2 100%);
     }
 }
 
@@ -150,6 +150,7 @@
 
     @media (min-width: $desktop-width) {
       margin-bottom: 55px;
+      background-color: #f2f2f2;
     }
 }
 
@@ -236,6 +237,9 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    position: static;
+    margin-left: 30px;
   }
 }
 
@@ -253,6 +257,12 @@
     display: flex;
     grid-column: 1 / -1;
     margin-left: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / -1;
+    grid-row: 1 / 4;
+    margin-left: 194px;
   }
 }
 
@@ -274,5 +284,6 @@
   @media (min-width: $desktop-width) {
     grid-column: 3 / -1;
     grid-row: 4 / 5;
+    margin-left: 200px;
   }
 }

@@ -150,6 +150,10 @@
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basicgreen;
   }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
