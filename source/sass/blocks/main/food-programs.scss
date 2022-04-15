@@ -59,9 +59,9 @@
     position: absolute;
     top: 515px;
 
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -41,9 +41,9 @@
     position: absolute;
     top: 148px;
 
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -61,7 +61,7 @@
 }
 
 .footer__social {
-margin-top: 52px;
+  margin-top: 52px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
