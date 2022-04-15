@@ -3,7 +3,7 @@
   background-image: url("../img/rectangle-opacity.png"), url("../img/background-main.jpg");
   background-position: top;
   background-repeat: no-repeat;
-  padding: 27px 35px 10px 36px;
+  padding: 27px 20px 10px 20px;
 
     @media (min-width: $tablet-width) {
       padding: 62px 237px 10px 117px;
@@ -27,7 +27,7 @@
   line-height: 36px;
   color: #ffffff;
   width: 250px;
-  margin: 0 0 25px 0;
+  margin: 0 0 25px 16px;
   padding: 0;
   text-align: center;
 
@@ -53,8 +53,8 @@
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  width: 250px;
-  margin: 0 0 29px 0;
+  width: 198px;
+  margin: 0 0 29px 40px;
 
     @media (min-width: $tablet-width) {
       font-weight: 400;
@@ -72,28 +72,36 @@
 }
 
 .main-welcome__button {
+  box-sizing: border-box;
   display: inline-block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
   background-color: $basicgreen;
-  max-width: 280px;
+  width: 280px;
   padding: 7px 44px;
 
     @media (min-width: $tablet-width) {
       max-width: 244px;
       padding: 14px 26px;
-      font-size: 20px;
-      line-height: 20px;
     }
 
     @media (min-width: $desktop-width) {
       margin-left: 80px;
     }
 }
+
+.main-welcome__button-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
 
 .main-welcome__image {
   @media (min-width: $tablet-width) {
