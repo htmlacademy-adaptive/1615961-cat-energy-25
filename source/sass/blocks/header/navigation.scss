@@ -1,10 +1,12 @@
 .navigation {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
 }
 
-.navigation__toggle {
+.navigation__toggle--open {
   position: relative;
   margin: 0;
   padding: 0;
@@ -36,13 +38,54 @@
     }
 }
 
-.navigation__list {
-  display: none;
-  list-style-type: none;
+.navigation__toggle--close {
+  position: relative;
   margin: 0;
   padding: 0;
+  min-width: 24px;
+  min-height: 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+    &::after {
+      content: '';
+      display: block;
+      min-width: 24px;
+      border-bottom: 1.5px solid black;
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      display: block;
+      min-width: 24px;
+      border-top: 1.5px solid black;
+      transform: rotate(45deg);
+    }
 
     @media (min-width: $tablet-width) {
+      display: none;
+    }
+}
+
+.navigation__list {
+  list-style-type: none;
+
+    @media (max-width: $mobile-width-only) {
+      position: absolute;
+      left: -276px;
+      top: 45px;
+      width: 320px;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      position: static;
       display: flex;
       width: 440px;
     }
@@ -52,28 +95,27 @@
       width: 640px;
     }
 }
-// В этом блоке начата работа над выпадающим меню без JS.
-
-// .navigation__toggle:hover + .navigation__list {
-//   display: block;
-//   position: absolute;
-//   background-color: #ffffff;
-//   width: 100%;
-//   top: 50px;
-// }
-
-// .navigation__list:hover {
-//   display: block;
-//   position: absolute;
-//   background-color: #ffffff;
-//   top: 50px;
-//   width: 100%;
-// }
-
 
 .navigation__item {
-  &:not(:last-child) {
-    margin-right: 34px;
+
+  @media (max-width: $mobile-width-only) {
+    box-sizing: border-box;
+    display: flex;
+    min-height: 66px;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-top: 1px solid #e6e6e6;
+
+      &:last-child{
+        border-bottom: 1px solid #e6e6e6;
+      }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
   }
 }
 
@@ -84,6 +126,10 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+
+    @media (max-width: $mobile-width-only) {
+      padding: 22px;
+    }
 
     @media (min-width: $tablet-width) {
       font-weight: 400;
@@ -97,4 +143,14 @@
       line-height: 30px;
       color: #ffffff;
     }
+}
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--opened .navigation__list {
+    display: block;
+  }
 }
