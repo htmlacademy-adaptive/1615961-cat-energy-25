@@ -8,7 +8,7 @@
       grid-template-columns: 200px 200px 1fr;
       width: 768px;
       padding: 50px 30px 56px 30px;
-      background-color: #ffffff;
+      background: linear-gradient(to bottom, #ffffff 0%, #ffffff 57%, #eaeaea 57%, #eaeaea 100%);
     }
 
     @media (min-width: $desktop-width) {
@@ -78,7 +78,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 130px;
+    width: 162px;
   }
 }
 
@@ -87,7 +87,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
-    grid-row: 3 / 5;
+    grid-row: 3 / 4;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,7 +101,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
-    grid-row: 3 / 5;
+    grid-row: 3 / 4;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,7 +126,9 @@
 
     @media (min-width: $tablet-width) {
       font-size: 30px;
-      line-height: 37px;
+      line-height: 72px;
+      min-width: 162px;
+      min-height: 72px;
     }
 }
 
@@ -143,6 +145,7 @@
     @media (min-width: $tablet-width) {
       font-size: 14px;
       line-height: 14px;
+      background-color: #ffffff;
     }
 
     @media (min-width: $desktop-width) {
@@ -155,6 +158,12 @@
   position: absolute;
   top: 48px;
   left: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    top: 65px;
+    left: 25px;
+  }
 }
 
 .results__text--time {
@@ -162,6 +171,12 @@
   position: absolute;
   top: 48px;
   left: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 142px;
+    top: 65px;
+    left: 10px;
+  }
 }
 
 .results__cost {
@@ -214,7 +229,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
-    grid-row: 4 / 5;
+    grid-row: 3 / 4;
+    position: relative;
+    top: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -227,14 +244,23 @@
   margin-bottom: 15px;
 
     @media (min-width: $tablet-width) {
-      grid-column: 2 / -1;
-      grid-row: 5 / 6;
+      display: none;
     }
+}
 
-    @media (min-width: $desktop-width) {
-      grid-column: 4 / -1;
-      grid-row: 1 / 3;
-    }
+.results__image-diff-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    grid-column: 1 / -1;
+    margin-left: 59px;
+  }
+}
+
+.results__image--cat-skinny,
+.results__image--cat-fat {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .results__results-condition {

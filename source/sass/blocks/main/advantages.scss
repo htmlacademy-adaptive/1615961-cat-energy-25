@@ -11,8 +11,10 @@
       &::after {
         content: '';
         display: block;
-        width: 708px;
+        width: 768px;
         border-bottom: 1px solid #e6e6e6;
+        position: relative;
+        right: 30px;
 
         @media (min-width: $desktop-width) {
           display: none;

@@ -135,6 +135,7 @@
       font-weight: 400;
       font-size: 18px;
       line-height: 24px;
+      padding: 10px 0px;
     }
 
     @media (min-width: $desktop-width) {
@@ -143,6 +144,12 @@
       line-height: 30px;
       color: #ffffff;
     }
+}
+
+.navigation__link--current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basicgreen;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
