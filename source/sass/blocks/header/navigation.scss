@@ -136,6 +136,14 @@
       font-size: 18px;
       line-height: 24px;
       padding: 10px 0px;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -143,6 +151,14 @@
       font-size: 20px;
       line-height: 30px;
       color: #ffffff;
+
+      &:hover {
+        color: rgba(256, 256, 256, 0.5);
+      }
+
+      &:active {
+        color: rgba(256, 256, 256, 0.3);
+      }
     }
 }
 

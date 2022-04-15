@@ -8,3 +8,28 @@
       width: 200px;
     }
 }
+
+.footer-developer__link {
+  color: #000000;
+
+  &:hover {
+    color: #68B738;
+  }
+
+  &:active {
+    color: #68B738;
+    opacity: 0.4;
+  }
+}
+
+.footer-developer__link-text {
+  color: #444444;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
+}

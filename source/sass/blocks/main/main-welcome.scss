@@ -78,6 +78,7 @@
   background-color: $basicgreen;
   width: 280px;
   padding: 7px 44px;
+  color: #ffffff;
 
     @media (min-width: $tablet-width) {
       max-width: 244px;
@@ -95,7 +96,6 @@
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
