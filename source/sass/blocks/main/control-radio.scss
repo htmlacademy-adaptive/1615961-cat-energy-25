@@ -10,7 +10,7 @@
 }
 
 .control-radio:checked + .control-radio__mark::after {
-  content: '';
+  content: "";
   display: block;
   width: 14px;
   height: 14px;

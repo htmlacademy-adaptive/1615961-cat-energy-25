@@ -38,7 +38,7 @@
 }
 
 .extra-card__property {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -54,7 +54,7 @@
 }
 
 .extra-card__meaning {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
@@ -80,7 +80,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 7px 220px;
-    // min-width: 632px;
     margin-left: 38px;
   }
 

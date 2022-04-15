@@ -56,6 +56,9 @@
 
 .cat-parameters__legend {
   margin: 0 0 35px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .cat-parameters__list {
@@ -115,12 +118,6 @@
     }
 }
 
-.cat-parameters__legend {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-}
-
 .cat-parameters__button {
   box-sizing: border-box;
   display: inline-block;
@@ -140,7 +137,7 @@
 }
 
 .cat-parameters__notice {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
