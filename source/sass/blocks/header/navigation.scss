@@ -150,7 +150,8 @@
     display: none;
   }
 
-  .navigation--opened .navigation__list {
+  .navigation--opened .navigation__list,
+  .navigation--nojs .navigation__list {
     display: block;
   }
 }
