@@ -4,18 +4,18 @@
   line-height: 36px;
   margin: 27px 20px 37px 20px;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 0 39px;
     width: 708px;
-   }
+  }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin: 0;
     width: 1220px;
     padding: 0 30px;
-   }
+  }
 }
 
 .form-container__description {
@@ -26,10 +26,10 @@
   margin: 0 20px 39px 20px;
   width: 227px;
 
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 30px;
-      width: 324px;
-      margin: 0 0 0 39px;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 324px;
+    margin: 0 0 0 39px;
+  }
 }
