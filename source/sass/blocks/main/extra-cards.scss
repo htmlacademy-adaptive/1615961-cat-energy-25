@@ -28,9 +28,10 @@
 
 .extra-cards__item {
   @media (min-width: $desktop-width) {
-   &:not(:last-child) {
-     margin-bottom: 32px;
-   }
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
   }
 }
 
