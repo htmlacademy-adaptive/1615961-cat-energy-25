@@ -1,0 +1,28 @@
+.control-checkbox {
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.control-checkbox__mark {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  top: -5px;
+}
+
+.control-checkbox:checked + .control-checkbox__mark::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icons/icon-v.svg") no-repeat center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

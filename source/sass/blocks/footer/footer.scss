@@ -2,15 +2,15 @@
   background-color: #f2f2f2;
   padding: 39px 20px 22px 20px;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-      padding: 58px 30px 55px 30px;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 58px 30px 55px 30px;
+  }
 
-    @media (min-width: $desktop-width) {
-      padding: 57px 110px 58px 110px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px 58px 110px;
+  }
 }
 
 .footer__logo-text {
@@ -18,9 +18,10 @@
   width: 280px;
   margin: 0 auto;
   text-align: center;
+  color: #000000;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     width: 280px;
     border-bottom: 1px solid #d9d9d9;
@@ -33,26 +34,34 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 280px;
     border-bottom: 1px solid #d9d9d9;
     position: absolute;
     top: 148px;
 
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 140px;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .footer__social {
-margin-top: 52px;
+  margin-top: 52px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
