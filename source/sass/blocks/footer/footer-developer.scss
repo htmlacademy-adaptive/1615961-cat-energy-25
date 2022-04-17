@@ -4,7 +4,32 @@
   align-items: center;
   width: 280px;
 
-    @media (min-width: $tablet-width) {
-      width: 200px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
+}
+
+.footer-developer__link {
+  color: #000000;
+
+  &:hover {
+    color: #68b738;
+  }
+
+  &:active {
+    color: #68b738;
+    opacity: 0.4;
+  }
+}
+
+.footer-developer__link-text {
+  color: #444444;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.4;
+  }
 }

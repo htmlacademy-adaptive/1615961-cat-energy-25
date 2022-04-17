@@ -4,7 +4,7 @@
   align-items: center;
   background-color: #ffffff;
   width: 280px;
-  min-height: 65px;
+  min-height: 66px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -14,15 +14,9 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    background: linear-gradient(to right, #ffffff 50%, $basicgreen 70%);
+    background: linear-gradient(to right, #ffffff 50%, $basicgreen 50%, $basicgreen 100%);
     min-height: 150px;
     padding: 0 110px;
-  }
-}
-
-.header__logo-image {
-  @media (min-width: $desktop-width) {
-
   }
 }
 
@@ -35,4 +29,3 @@
     margin-right: 540px;
   }
 }
-

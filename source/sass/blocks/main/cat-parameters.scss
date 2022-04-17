@@ -1,4 +1,8 @@
 .cat-parameters {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 20px 32px 20px;
+
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
@@ -11,6 +15,10 @@
 }
 
 .cat-parameters__common {
+  margin: 0 0 24px 0;
+  padding: 0;
+  border: none;
+
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 570px;
@@ -18,14 +26,61 @@
 }
 
 .cat-parameters__wishes {
+  margin: 0 0 24px 0;
+  padding: 0;
+  border: none;
+
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 570px;
   }
 }
 
+.cat-parameters__owner {
+  margin: 0 0 24px 0;
+  padding: 0;
+  border: none;
+}
+
+.cat-parameters__comment {
+  margin: 0 0 22px 0;
+  padding: 0;
+  border: none;
+}
+
+.cat-parameters__additional {
+  margin: 0 0 34px 0;
+  padding: 0;
+  border: none;
+}
+
+.cat-parameters__legend {
+  margin: 0 0 35px 0;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
 .cat-parameters__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cat-parameters__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.cat-parameters__item--radio:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.cat-parameters__item--checkbox:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.cat-parameters__control {
+  position: relative;
 }
 
 .cat-parameters__list--owner {
@@ -53,26 +108,27 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
-}
 
-.cat-parameters__legend {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
+  &--radio {
+    margin-left: 40px;
+  }
+
+  &--checkbox {
+    margin-left: 40px;
+  }
 }
 
 .cat-parameters__button {
+  box-sizing: border-box;
   display: inline-block;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: $basicgreen;
   padding: 7px 44px;
   border: none;
-  cursor: pointer;
+  min-width: 280px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -81,10 +137,12 @@
 }
 
 .cat-parameters__notice {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: inline-block;
