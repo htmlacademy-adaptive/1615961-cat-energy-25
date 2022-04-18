@@ -20,6 +20,23 @@
   }
 }
 
+.header--inner {
+  margin-bottom: 27px;
+  &::after {
+    content: "";
+    display: block;
+    width: 320px;
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
 .header__logo-text {
   @media (min-width: $tablet-width) {
     margin-right: 94px;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header header--inner">
       <a class="header__logo-image" href="index.html">
         <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип сайта.">
       </a>
@@ -37,7 +37,8 @@
         <h2 class="visually-hidden">Карточки товаров</h2>
         <ul class="food-cards__list">
           <li class="food-cards__item food-card">
-            <img class="food-card__image" src="img/food-chiken-500.jpg" width="68" height="86" alt="Корм с курицей.">
+            <img class="food-card__image" src="img/food-chicken-500.jpg" width="68" height="86" alt="Корм с курицей.">
+            <img class="food-card__image--bigger" src="img/img-tablet/food-chicken-500.png" width="161" height="172" alt="Корм с курицей.">
             <p class="food-card__name">Cat Energy Pro 500 г</p>
             <dl class="food-card__properties">
               <dt class="food-card__property">Масса</dt>
@@ -50,7 +51,8 @@
             <a class="food-card__order button" href="#">Заказать</a>
           </li>
           <li class="food-cards__item food-card">
-            <img class="food-card__image" src="img/food-chiken-1000.jpg" width="84" height="101" alt="Корм с курицей, большой.">
+            <img class="food-card__image" src="img/img-tablet/food-chicken-1000.png" width="84" height="100" alt="Корм с курицей, большой.">
+            <img class="food-card__image--bigger" src="img/img-tablet/food-chicken-1000.png" width="168" height="206" alt="Корм с курицей, большой.">
             <p class="food-card__name">Cat Energy Pro 1000 г</p>
             <dl class="food-card__properties">
               <dt class="food-card__property">Масса</dt>
@@ -64,6 +66,7 @@
           </li>
           <li class="food-cards__item food-card">
             <img class="food-card__image" src="img/food-fish-500.jpg" width="68" height="78" alt="Корм с рыбой.">
+            <img class="food-card__image--bigger" src="img/img-tablet/food-fish-500.png" width="163" height="174" alt="Корм с рыбой.">
             <p class="food-card__name">Cat Energy Pro 500 г</p>
             <dl class="food-card__properties">
               <dt class="food-card__property">Масса</dt>
@@ -76,7 +79,8 @@
             <a class="food-card__order button" href="#">Заказать</a>
           </li>
           <li class="food-cards__item food-card">
-            <img class="food-card__image" src="img/food-fish-1000.jpg" width="84" height="101" alt="Корм с рыбой, большой.">
+            <img class="food-card__image" src="img/food-fish-1000.jpg" width="84" height="100" alt="Корм с рыбой, большой.">
+            <img class="food-card__image--bigger" src="img/img-tablet/food-fish-1000.png" width="168" height="200" alt="Корм с рыбой, большой.">
             <p class="food-card__name">Cat Energy Pro 1000 г</p>
             <dl class="food-card__properties">
               <dt class="food-card__property">Масса</dt>
@@ -89,7 +93,8 @@
             <a class="food-card__order button" href="#">Заказать</a>
           </li>
           <li class="food-cards__item food-card">
-            <img class="food-card__image" src="img/food-buckwheat-500.jpg" width="68" height="78" alt="Корм с гречкой.">
+            <img class="food-card__image" src="img/food-buckwheat-500.jpg" width="62" height="78" alt="Корм с гречкой.">
+            <img class="food-card__image--bigger" src="img/img-tablet/food-buckweat-500.png" width="161" height="171" alt="Корм с гречкой.">
             <p class="food-card__name">Cat Energy Slim 500 г</p>
             <dl class="food-card__properties">
               <dt class="food-card__property">Масса</dt>
@@ -103,6 +108,7 @@
           </li>
           <li class="food-cards__item food-card">
             <img class="food-card__image" src="img/food-buckwheat-1000.jpg" width="84" height="100" alt="Корм с гречкой, большой.">
+            <img class="food-card__image--bigger" src="img/img-tablet/food-buckweat-1000.png" width="168" height="200" alt="Корм с гречкой, большой.">
             <p class="food-card__name">Cat Energy Slim 1000 г</p>
             <dl class="food-card__properties">
               <dt class="food-card__property">Масса</dt>
@@ -116,6 +122,7 @@
           </li>
           <li class="food-cards__item food-card">
             <img class="food-card__image" src="img/food-rice-500.jpg" width="72" height="84" alt="Корм с рисом.">
+            <img class="food-card__image--bigger" src="img/img-tablet/food-rice-500.png" width="163" height="174" alt="Корм с рисом.">
             <p class="food-card__name">Cat Energy Slim 500 г</p>
             <dl class="food-card__properties">
               <dt class="food-card__property">Масса</dt>
@@ -174,9 +181,13 @@
           <h2 class="gift__title">Закажите все и получите чехол для кота в подарок!</h2>
         </div>
       </section>
-      <section class="contacts">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <section class="contacts contacts--inner">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002935!2d30.320858715859668!3d59.93871916905446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650010073866!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy"         title="Офис компании по адресу Большая Конюшенная 19/8 Санкт-Петербург">
+        </iframe>
       </section>
     </main>
     <footer class="page__footer footer">
