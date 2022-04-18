@@ -168,6 +168,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+.navigation__link--inner-current {
+  @media (min-width: $desktop-width) {
     border-bottom: 2px solid $basicgreen;
   }
 }
