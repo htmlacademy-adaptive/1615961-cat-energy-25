@@ -26,6 +26,11 @@
     margin-bottom: 0;
     background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, #f2f2f2 20%, #f2f2f2 100%);
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 90px 90px;
+    padding: 0 30px 40px 35px;
+  }
 }
 
 .food-card__image {
@@ -84,6 +89,10 @@
     grid-row-gap: 14px;
     margin-bottom: 33px;
   }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 90px 90px;
+  }
 }
 
 .food-card__property {
@@ -129,5 +138,10 @@
     grid-row: 4 / 5;
     padding: 10px 93px;
     margin: 0 2px 0 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px;
+    margin: 0;
   }
 }

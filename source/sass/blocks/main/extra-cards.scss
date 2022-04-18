@@ -23,14 +23,15 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    max-width: 900px;
+    max-width: 896px;
+    margin: 0;
   }
 }
 
 .extra-cards__item {
   @media (min-width: $desktop-width) {
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 0;
     }
   }
 }
@@ -70,6 +71,32 @@
       left: 441px;
       border-top: 2px solid $basicgreen;
       width: 328px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 18px 0 80px 0;
+    border: none;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      border-top: 2px solid $basicgreen;
+      width: 70px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 513px;
+      border-top: 2px solid $basicgreen;
+      width: 927px;
     }
   }
 }

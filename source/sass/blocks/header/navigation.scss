@@ -168,7 +168,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid $basicgreen;
   }
 }
 
@@ -180,5 +180,24 @@
   .navigation--opened .navigation__list,
   .navigation--nojs .navigation__list {
     display: block;
+  }
+}
+
+.navigation__link--inner {
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 0;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }

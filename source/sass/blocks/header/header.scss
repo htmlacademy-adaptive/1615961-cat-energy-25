@@ -22,6 +22,7 @@
 
 .header--inner {
   margin-bottom: 27px;
+
   &::after {
     content: "";
     display: block;
@@ -34,6 +35,10 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, #ffffff 50%, #ffffff 100%);
   }
 }
 
