@@ -12,9 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
     width: 1220px;
-    padding: 0 30px;
+    margin: 0 0 56px 110px;
   }
 }
 
@@ -31,5 +30,10 @@
     line-height: 30px;
     width: 324px;
     margin: 0 0 66px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 324px;
+    margin: 0 0 66px 110px;
   }
 }

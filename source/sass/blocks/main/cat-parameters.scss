@@ -5,13 +5,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 768px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding: 0 30px;
+    width: 1440px;
+    padding: 0 110px;
   }
 }
 
@@ -131,6 +131,28 @@
         width: 145px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: -110px;
+        border-top: 2px solid $basicgreen;
+        width: 70px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 583px;
+        border-top: 2px solid $basicgreen;
+        width: 778px;
+      }
+    }
   }
 
   &--comments {
@@ -170,6 +192,28 @@
         width: 478px;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: -110px;
+        border-top: 2px solid $basicgreen;
+        width: 70px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 259px;
+        border-top: 2px solid $basicgreen;
+        width: 1108px;
+      }
+    }
   }
 
   &--additional {
@@ -207,6 +251,28 @@
         left: 300px;
         border-top: 2px solid $basicgreen;
         width: 446px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: -110px;
+        border-top: 2px solid $basicgreen;
+        width: 70px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 300px;
+        border-top: 2px solid $basicgreen;
+        width: 1078px;
       }
     }
   }
@@ -298,5 +364,9 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-left: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 81px;
   }
 }

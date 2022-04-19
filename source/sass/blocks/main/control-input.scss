@@ -17,6 +17,10 @@
     @media (min-width: $tablet-width) {
       width: 567px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 506px;
+    }
   }
 
   &--weight {
@@ -24,6 +28,10 @@
 
     @media (min-width: $tablet-width) {
       width: 536px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 475px;
     }
   }
 
@@ -33,6 +41,10 @@
     @media (min-width: $tablet-width) {
       width: 497px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 436px;
+    }
   }
 
   &--email {
@@ -41,6 +53,10 @@
     @media (min-width: $tablet-width) {
       width: 551px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 486px;
+    }
   }
 
   &--phone {
@@ -48,6 +64,10 @@
 
     @media (min-width: $tablet-width) {
       width: 535px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 472px;
     }
   }
 
@@ -59,6 +79,10 @@
 
     @media (min-width: $tablet-width) {
       width: 631px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
     }
   }
 }
