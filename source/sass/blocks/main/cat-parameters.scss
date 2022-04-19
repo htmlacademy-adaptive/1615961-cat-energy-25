@@ -2,6 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   padding: 0 20px 32px 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -15,9 +16,21 @@
 }
 
 .cat-parameters__common {
-  margin: 0 0 24px 0;
+  margin: 0 0 55px 0;
   padding: 0;
   border: none;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 320px;
+      border-bottom: 1px solid #d9d9d9;
+      position: absolute;
+      top: 180px;
+      left: 0;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
@@ -26,9 +39,21 @@
 }
 
 .cat-parameters__wishes {
-  margin: 0 0 24px 0;
+  margin: 0 0 55px 0;
   padding: 0;
   border: none;
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: "";
+      display: block;
+      width: 320px;
+      border-bottom: 1px solid #d9d9d9;
+      position: absolute;
+      top: 330px;
+      left: 0;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
@@ -40,18 +65,21 @@
   margin: 0 0 24px 0;
   padding: 0;
   border: none;
+  position: relative;
 }
 
 .cat-parameters__comment {
   margin: 0 0 22px 0;
   padding: 0;
   border: none;
+  position: relative;
 }
 
 .cat-parameters__additional {
   margin: 0 0 34px 0;
   padding: 0;
   border: none;
+  position: relative;
 }
 
 .cat-parameters__legend {
@@ -59,6 +87,48 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+
+  &--contacts {
+    @media (max-width: $mobile-width-only) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 221px;
+        border-top: 2px solid $basicgreen;
+        width: 99px;
+      }
+    }
+  }
+
+  &--comments {
+    @media (max-width: $mobile-width-only) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 163px;
+        border-top: 2px solid $basicgreen;
+        width: 158px;
+      }
+    }
+  }
+
+  &--additional {
+    @media (max-width: $mobile-width-only) {
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 184px;
+        border-top: 2px solid $basicgreen;
+        width: 136px;
+      }
+    }
+  }
 }
 
 .cat-parameters__list {

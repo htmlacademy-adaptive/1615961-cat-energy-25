@@ -1,11 +1,11 @@
 .extra-cards {
   width: 280px;
   padding: 20px 20px 35px 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 30px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,6 +44,18 @@
   padding: 25px 0 36px 0;
   margin: 0;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 267px;
+      border-top: 2px solid $basicgreen;
+      width: 53px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
