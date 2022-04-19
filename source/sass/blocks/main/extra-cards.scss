@@ -1,6 +1,7 @@
 .extra-cards {
   width: 280px;
-  padding: 20px;
+  padding: 20px 20px 35px 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -22,14 +23,15 @@
   padding: 0;
 
   @media (min-width: $desktop-width) {
-    max-width: 900px;
+    max-width: 896px;
+    margin: 0;
   }
 }
 
 .extra-cards__item {
   @media (min-width: $desktop-width) {
     &:not(:last-child) {
-      margin-bottom: 32px;
+      margin-bottom: 0;
     }
   }
 }
@@ -39,14 +41,74 @@
   font-size: 24px;
   line-height: 24px;
   text-align: left;
+  padding: 25px 0 36px 0;
+  margin: 0;
+  border-bottom: 1px solid #cdcdcd;
 
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-    margin-left: 38px;
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 267px;
+      border-top: 2px solid $basicgreen;
+      width: 53px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin: 18px 0 80px 38px;
+    border: none;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      border-top: 2px solid $basicgreen;
+      width: 30px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 441px;
+      border-top: 2px solid $basicgreen;
+      width: 328px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 18px 0 80px 0;
+    border: none;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      border-top: 2px solid $basicgreen;
+      width: 70px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 70px;
+      left: 513px;
+      border-top: 2px solid $basicgreen;
+      width: 927px;
+    }
   }
 }
