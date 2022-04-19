@@ -55,6 +55,12 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    border: 1px solid #e7e7e7;
+    padding: 25px 5px 29px 25px;
+    width: 595px;
+  }
+
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 570px;
@@ -100,6 +106,31 @@
         width: 99px;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: -30px;
+        border-top: 2px solid $basicgreen;
+        width: 30px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 583px;
+        border-top: 2px solid $basicgreen;
+        width: 145px;
+      }
+    }
   }
 
   &--comments {
@@ -114,6 +145,31 @@
         width: 158px;
       }
     }
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: -30px;
+        border-top: 2px solid $basicgreen;
+        width: 30px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 259px;
+        border-top: 2px solid $basicgreen;
+        width: 478px;
+      }
+    }
   }
 
   &--additional {
@@ -126,6 +182,31 @@
         left: 184px;
         border-top: 2px solid $basicgreen;
         width: 136px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: -30px;
+        border-top: 2px solid $basicgreen;
+        width: 30px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 300px;
+        border-top: 2px solid $basicgreen;
+        width: 446px;
       }
     }
   }
@@ -216,5 +297,6 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+    margin-left: 61px;
   }
 }

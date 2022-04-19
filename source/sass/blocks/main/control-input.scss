@@ -13,22 +13,42 @@
 
   &--name {
     width: 229px;
+
+    @media (min-width: $tablet-width) {
+      width: 567px;
+    }
   }
 
   &--weight {
     width: 204px;
+
+    @media (min-width: $tablet-width) {
+      width: 536px;
+    }
   }
 
   &--age {
     width: 172px;
+
+    @media (min-width: $tablet-width) {
+      width: 497px;
+    }
   }
 
   &--email {
     width: 219px;
+
+    @media (min-width: $tablet-width) {
+      width: 551px;
+    }
   }
 
   &--phone {
     width: 204px;
+
+    @media (min-width: $tablet-width) {
+      width: 535px;
+    }
   }
 
   &--comment {
@@ -36,5 +56,9 @@
     min-height: 150px;
     margin-left: 0;
     padding: 13px 15px;
+
+    @media (min-width: $tablet-width) {
+      width: 631px;
+    }
   }
 }
