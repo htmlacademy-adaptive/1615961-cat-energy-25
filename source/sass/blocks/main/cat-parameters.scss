@@ -298,6 +298,10 @@
 
 .cat-parameters__control {
   position: relative;
+
+  // &:hover {
+  //   cursor: pointer;
+  // }
 }
 
 .cat-parameters__list--owner {
@@ -349,6 +353,16 @@
 
 .control-radio:disabled ~ .cat-parameters__text--radio:hover {
   cursor: default;
+}
+
+.control-checkbox:disabled ~ .cat-parameters__text--checkbox {
+  color: #222222;
+  opacity: 0.3;
+}
+
+.control-radio:disabled ~ .cat-parameters__text--radio {
+  color: #222222;
+  opacity: 0.3;
 }
 
 .cat-parameters__button {
