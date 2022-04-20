@@ -330,6 +330,10 @@
     margin-left: 40px;
   }
 
+  &--radio:hover {
+    cursor: pointer;
+  }
+
   &--checkbox {
     margin-left: 40px;
   }
@@ -339,7 +343,11 @@
   }
 }
 
-.control-checkbox:disabled ~ .cat-parameters__text:hover {
+.control-checkbox:disabled ~ .cat-parameters__text--checkbox:hover {
+  cursor: default;
+}
+
+.control-radio:disabled ~ .cat-parameters__text--radio:hover {
   cursor: default;
 }
 
