@@ -13,6 +13,11 @@
   border: 1px solid #cdcdcd;
   position: absolute;
   top: -5px;
+
+  &:hover {
+    border: 1px solid #bababa;
+    cursor: pointer;
+  }
 }
 
 .control-checkbox:checked + .control-checkbox__mark::after {
@@ -25,4 +30,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.control-checkbox:disabled ~ .cat-parameters__text--checkbox {
+  color: #222222;
+  opacity: 0.3;
+}
+
+.control-checkbox:disabled ~ .control-checkbox__mark {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+  cursor: default;
 }

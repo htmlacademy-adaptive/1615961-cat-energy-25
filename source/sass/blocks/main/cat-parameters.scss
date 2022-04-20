@@ -333,6 +333,14 @@
   &--checkbox {
     margin-left: 40px;
   }
+
+  &--checkbox:hover {
+    cursor: pointer;
+  }
+}
+
+.control-checkbox:disabled ~ .cat-parameters__text:hover {
+  cursor: default;
 }
 
 .cat-parameters__button {
