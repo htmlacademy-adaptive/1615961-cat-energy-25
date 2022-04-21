@@ -102,7 +102,8 @@
         position: absolute;
         top: 20px;
         left: 221px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 99px;
       }
     }
@@ -117,8 +118,9 @@
         position: absolute;
         top: 20px;
         left: -30px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
         width: 30px;
+        height: 2px;
       }
 
       &::after {
@@ -126,9 +128,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 583px;
-        border-top: 2px solid $basicgreen;
+        right: -30px;
+        background-color: $basicgreen;
         width: 145px;
+        height: 2px;
       }
     }
 
@@ -139,7 +142,8 @@
         position: absolute;
         top: 20px;
         left: -110px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 70px;
       }
 
@@ -148,8 +152,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 583px;
-        border-top: 2px solid $basicgreen;
+        right: -110px;
+        background-color: $basicgreen;
+        height: 2px;
         width: 778px;
       }
     }
@@ -163,7 +168,8 @@
         position: absolute;
         top: 15px;
         left: 163px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 158px;
       }
     }
@@ -178,7 +184,8 @@
         position: absolute;
         top: 20px;
         left: -30px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 30px;
       }
 
@@ -187,8 +194,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 259px;
-        border-top: 2px solid $basicgreen;
+        right: -30px;
+        background-color: $basicgreen;
+        height: 2px;
         width: 478px;
       }
     }
@@ -200,7 +208,8 @@
         position: absolute;
         top: 20px;
         left: -110px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 70px;
       }
 
@@ -209,8 +218,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 259px;
-        border-top: 2px solid $basicgreen;
+        right: -110px;
+        background-color: $basicgreen;
+        height: 2px;
         width: 1108px;
       }
     }
@@ -224,7 +234,8 @@
         position: absolute;
         top: 15px;
         left: 184px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 136px;
       }
     }
@@ -239,7 +250,8 @@
         position: absolute;
         top: 20px;
         left: -30px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 30px;
       }
 
@@ -248,8 +260,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 300px;
-        border-top: 2px solid $basicgreen;
+        right: -30px;
+        background-color: $basicgreen;
+        height: 2px;
         width: 446px;
       }
     }
@@ -261,7 +274,8 @@
         position: absolute;
         top: 20px;
         left: -110px;
-        border-top: 2px solid $basicgreen;
+        background-color: $basicgreen;
+        height: 2px;
         width: 70px;
       }
 
@@ -270,8 +284,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 300px;
-        border-top: 2px solid $basicgreen;
+        right: -110px;
+        background-color: $basicgreen;
+        height: 2px;
         width: 1078px;
       }
     }
@@ -298,6 +313,10 @@
 
 .cat-parameters__control {
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .cat-parameters__list--owner {
