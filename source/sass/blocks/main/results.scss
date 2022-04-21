@@ -242,12 +242,27 @@
   }
 }
 
+.results__image-wrapper {
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    margin-left: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / -1;
+    grid-row: 1 / 4;
+    margin-left: 200px;
+  }
+}
+
 .results__image {
   display: block;
   margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    width: 592px;
+    height: 511px;
   }
 }
 
@@ -262,13 +277,6 @@
     grid-column: 3 / -1;
     grid-row: 1 / 4;
     margin-left: 194px;
-  }
-}
-
-.results__image--cat-skinny,
-.results__image--cat-fat {
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 }
 

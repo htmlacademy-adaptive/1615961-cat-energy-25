@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico">
     <link rel="favicon" href="../favicon.webmanifest">
   </head>
   <body class="page__body">
@@ -41,10 +41,14 @@
       <section class="main-welcome">
         <h1 class="main-welcome__title">Функциональное питание для котов</h1>
         <p class="main-welcome__text">Занялся собой? Займись котом!</p>
-        <img class="main-welcome__image" src="img/can-mobile.png" width="280" height="270" alt="Банка с кормом Cat Energy со вкусом курицы.">
-        <a class="main-welcome__button button" href="form.html">
-          <span class="main-welcome__button-text">Подобрать программу</span>
-        </a>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/img-desktop/can-food.png 1x, img/img-desktop/can-food@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/img-tablet/can-food.png 1x, img/img-tablet/can-food@2x.png 2x">
+          <img class="main-welcome__image" src="img/can-food.png" srcset="img/can-food@2x.png 2x" width="280" height="270" alt="Банка с кормом Cat Energy со вкусом курицы.">
+          <a class="main-welcome__button button" href="form.html">
+            <span class="main-welcome__button-text">Подобрать программу</span>
+          </a>
+        </picture>
       </section>
       <section class="food-programs">
         <h2 class="visually-hidden">Программы питания</h2>
@@ -89,10 +93,11 @@
         </div>
         <p class="results__cost results__cost--text">Затраты на питание:</p>
         <p class="results__cost results__cost--number">15 000 руб.</p>
-        <img class="results__image" src="img/cat-before-mobile.png" alt="Изображение кота до перехода на корм Cat Energy.">
-        <div class="results__image-diff-wrapper">
-          <img class="results__image--cat-fat" src="img/img-tablet/half-cat-fat.png" alt="Изображение кота до перехода на корм Cat Energy.">
-          <img class="results__image--cat-skinny" src="img/img-tablet/half-cat-skinny.png" alt="Изображение кота после перехода на корм Cat Energy.">
+        <div class="results__image-wrapper">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/img-tablet/cat-fat-skinny.png 1x, img/img-tablet/cat-fat-skinny@2x.png 2x">
+            <img class="results__image" src="img/cat-before.png" srcset="img/cat-before@2x.png 2x" width="280" height="232" alt="Наглядное сравнение внешнего вида кота.">
+          </picture>
         </div>
         <div class="results__results-condition results-condition">
           <button class="results-condition__button results-condition__button--before" type="button">Было</button>
