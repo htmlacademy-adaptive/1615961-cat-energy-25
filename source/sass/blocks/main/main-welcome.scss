@@ -114,15 +114,14 @@
   }
 }
 
-
 .main-welcome__image {
   @media (min-width: $tablet-width) {
-   position: absolute;
-   z-index: -1;
-   left: 0;
-   top: 330px;
-   width: 709px;
-   height: 609px;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 330px;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
