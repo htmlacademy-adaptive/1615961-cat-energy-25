@@ -1,23 +1,35 @@
 .main-welcome {
   background: linear-gradient(#68b738 30%, #ffffff 40%, #ffffff 100%);
-  background-image: url("../img/rectangle-opacity.png"), url("../img/background-main.jpg");
+  background-image: url("../img/background-main.jpg");
+  box-shadow: inset 0 302px 0 0 rgba(104, 183, 56, 0.85);
   background-position: top;
   background-repeat: no-repeat;
   padding: 27px 20px 10px 20px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-main@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 62px 237px 10px 117px;
     min-height: 850px;
-    background-image: url("../img/img-tablet/main-can.png");
-    background-position: 0 265px;
+    background-image: none;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 170px 110px 10px 110px;
-    min-height: 530px;
-    background-image: url("../img/img-desktop/main-can.png"), url("../img/img-desktop/rectangle.png"), url("../img/img-desktop/cat-background.jpg");
-    background-position: 550px 180px, 720px 0, 720px 0;
+    padding: 170px 110px 0 110px;
+    min-height: 524px;
+    background-image: url("../img/img-desktop/background-main.jpg");
+    box-shadow: inset -720px 0 0 0 rgba(104, 183, 56, 0.85);
+    background-position: 720px 0;
     margin-top: -150px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-desktop/background-main@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 }
 
@@ -102,9 +114,22 @@
   }
 }
 
-
 .main-welcome__image {
   @media (min-width: $tablet-width) {
-    display: none;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 330px;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    z-index: 1;
+    left: 550px;
+    top: 180px;
   }
 }

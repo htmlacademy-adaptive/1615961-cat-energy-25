@@ -113,4 +113,18 @@
       width: 1220px;
     }
   }
+
+  &:focus {
+    outline: 2px solid #444444;
+    outline-offset: -1px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &--error {
+    outline: 2px solid #ff8282;
+    outline-offset: -1px;
+  }
 }

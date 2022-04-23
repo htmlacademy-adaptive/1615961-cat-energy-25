@@ -25,7 +25,15 @@
     font-size: 20px;
     line-height: 30px;
     padding: 1px 0;
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #c4c4c4;
+
+    &:hover {
+      border-bottom: 1px solid #c4c4c4;
+    }
+
+    &:active {
+      border-bottom: 1px solid transparent;
+    }
   }
 }
 
@@ -73,6 +81,12 @@
       height: 34px;
       border-radius: 50%;
       box-shadow: inset 0 0 0 12px #ffffff, 0 0 1px 2px #dcdcdc;
+    }
+  }
+
+  &:active::after {
+    @media (min-width: $tablet-width) {
+      box-shadow: inset 0 0 0 1px $basicgreen, inset 0 0 0 12px #ffffff, 0 0 1px 2px #dcdcdc;
     }
   }
 }
