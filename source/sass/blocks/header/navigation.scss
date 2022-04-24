@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .navigation__toggle--open {
@@ -74,6 +78,8 @@
 
 .navigation__list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   @media (max-width: $mobile-width-only) {
     position: absolute;
@@ -81,14 +87,13 @@
     top: 45px;
     width: 320px;
     background-color: #ffffff;
-    margin: 0;
-    padding: 0;
   }
 
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
     width: 440px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {

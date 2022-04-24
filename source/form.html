@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="favicon" href="../favicon.webmanifest">
   </head>
   <body class="page__body">
     <header class="header header--inner">
       <a class="header__logo-image" href="index.html">
-        <img src="img/logo-mobile.svg" width="33" height="37" alt="Логотип сайта.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/img-desktop/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/img-tablet/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип сайта.">
+        </picture>
       </a>
       <a class="header__logo-text" href="index.html">
         <img src="img/logo-mobile-text.svg" width="101" height="18" alt="Текстовый логотип Cat Energy.">
@@ -130,28 +136,28 @@
           <ul class="cat-parameters__list cat-parameters__list--additional">
             <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
-                <input class="control-checkbox" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
+                <input class="control-checkbox visually-hidden" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
                 <span class="control-checkbox__mark"></span>
                 <span class="cat-parameters__text cat-parameters__text--checkbox">Сахарозаменитель</span>
               </label>
             </li>
             <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
-                <input class="control-checkbox" type="checkbox" name="water" value="water">
+                <input class="control-checkbox visually-hidden" type="checkbox" name="water" value="water">
                 <span class="control-checkbox__mark"></span>
                 <span class="cat-parameters__text cat-parameters__text--checkbox">Питьевая вода</span>
               </label>
             </li>
             <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
-                <input class="control-checkbox" type="checkbox" name="milk" value="milk">
+                <input class="control-checkbox visually-hidden" type="checkbox" name="milk" value="milk">
                 <span class="control-checkbox__mark"></span>
                 <span class="cat-parameters__text cat-parameters__text--checkbox">Молоко</span>
               </label>
             </li>
             <li class="cat-parameters__item cat-parameters__item--checkbox">
               <label class="cat-parameters__control">
-                <input class="control-checkbox" type="checkbox" name="vitamines" value="vitamines">
+                <input class="control-checkbox visually-hidden" type="checkbox" name="vitamines" value="vitamines">
                 <span class="control-checkbox__mark"></span>
                 <span class="cat-parameters__text cat-parameters__text--checkbox">Витамины</span>
               </label>

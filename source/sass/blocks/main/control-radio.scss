@@ -7,6 +7,11 @@
   border: 1px solid #cdcdcd;
   position: absolute;
   top: -5px;
+
+  &:hover {
+    border: 1px solid #bababa;
+    cursor: pointer;
+  }
 }
 
 .control-radio:checked + .control-radio__mark::after {
@@ -20,4 +25,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.control-radio:disabled + .cat-parameters__text--radio {
+  color: #222222;
+  opacity: 0.3;
+}
+
+.control-radio:disabled + .control-radio__mark {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.cat-parameters__control:hover .control-radio__mark {
+  border: 1px solid #bababa;
 }
