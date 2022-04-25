@@ -1,16 +1,37 @@
 .footer {
+  box-sizing: border-box;
   background-color: #f2f2f2;
+  background-size: 100%;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}
+
+.footer__wrapper {
+  box-sizing: border-box;
   padding: 39px 20px 22px 20px;
+  width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 58px 30px 55px 30px;
     align-items: center;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 57px 110px 58px 110px;
+    width: 1440px;
   }
 }
 

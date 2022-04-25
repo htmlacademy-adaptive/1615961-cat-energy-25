@@ -1,15 +1,33 @@
 .food-programs {
-  padding: 20px;
-  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}
+
+.food-programs__wrapper {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 20px 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 82px 110px 20px 110px;
     display: flex;
     flex-wrap: wrap;
-    padding: 82px 110px 20px 110px;
   }
 }
 

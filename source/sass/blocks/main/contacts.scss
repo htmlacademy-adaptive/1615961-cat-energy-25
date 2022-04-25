@@ -1,5 +1,11 @@
 .contacts {
   position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+  min-width: 768px;
+  }
 
   &--inner {
     background-color: #f2f2f2;
@@ -7,6 +13,9 @@
 }
 
 .contacts__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
@@ -14,6 +23,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 56px 70px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,14 +75,15 @@
 
 .contacts__map {
   display: block;
-  width: 320px;
+  min-width: 320px;
+  width: 100%;
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    min-width: 1440px;
   }
 }
