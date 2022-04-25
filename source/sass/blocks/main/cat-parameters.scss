@@ -1,7 +1,20 @@
 .cat-parameters {
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+  }
+}
+
+.cat-parameters__form {
   box-sizing: border-box;
-  width: 100%;
+  width: 320px;
   padding: 0 20px 32px 20px;
+  margin: 0 auto;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -24,11 +37,11 @@
     &::before {
       content: "";
       display: block;
-      width: 320px;
+      width: 2000%;
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
       top: 180px;
-      left: 0;
+      left: -1000%;
     }
   }
 
@@ -47,11 +60,11 @@
     &::before {
       content: "";
       display: block;
-      width: 320px;
+      width: 2000%;
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
       top: 330px;
-      left: 0;
+      left: -1000%;
     }
   }
 
@@ -104,7 +117,7 @@
         left: 221px;
         background-color: $basicgreen;
         height: 2px;
-        width: 99px;
+        width: 1000%;
       }
     }
 
@@ -117,9 +130,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -30px;
+        left: -1000%;
         background-color: $basicgreen;
-        width: 30px;
+        width: calc(1000% - 30px);
         height: 2px;
       }
 
@@ -128,9 +141,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        right: -30px;
+        left: 540px;
         background-color: $basicgreen;
-        width: 145px;
+        width: 1000%;
         height: 2px;
       }
     }
@@ -141,10 +154,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -110px;
+        left: -1000%;
         background-color: $basicgreen;
         height: 2px;
-        width: 70px;
+        width: calc(1000% - 40px);
       }
 
       &::after {
@@ -152,10 +165,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        right: -110px;
+        left: 600px;
         background-color: $basicgreen;
         height: 2px;
-        width: 778px;
+        width: 1000%;
       }
     }
   }
@@ -170,7 +183,7 @@
         left: 163px;
         background-color: $basicgreen;
         height: 2px;
-        width: 158px;
+        width: 1000%;
       }
     }
 
@@ -183,10 +196,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -30px;
+        left: -1000%;
         background-color: $basicgreen;
         height: 2px;
-        width: 30px;
+        width: calc(1000% - 30px);
       }
 
       &::after {
@@ -194,10 +207,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        right: -30px;
+        left: 220px;
         background-color: $basicgreen;
         height: 2px;
-        width: 478px;
+        width: 1000%;
       }
     }
 
@@ -207,10 +220,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -110px;
+        left: -1000%;
         background-color: $basicgreen;
         height: 2px;
-        width: 70px;
+        width: calc(1000% - 40px);
       }
 
       &::after {
@@ -218,10 +231,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        right: -110px;
+        left: 200px;
         background-color: $basicgreen;
         height: 2px;
-        width: 1108px;
+        width: 1000%;
       }
     }
   }
@@ -236,7 +249,7 @@
         left: 184px;
         background-color: $basicgreen;
         height: 2px;
-        width: 136px;
+        width: 1000%;
       }
     }
 
@@ -249,10 +262,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -30px;
+        left: -1000%;
         background-color: $basicgreen;
         height: 2px;
-        width: 30px;
+        width: calc(1000% - 30px);
       }
 
       &::after {
@@ -260,10 +273,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        right: -30px;
+        left: 250px;
         background-color: $basicgreen;
         height: 2px;
-        width: 446px;
+        width: 1000%;
       }
     }
 
@@ -273,10 +286,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -110px;
+        left: -1000%;
         background-color: $basicgreen;
         height: 2px;
-        width: 70px;
+        width: calc(1000% - 40px);
       }
 
       &::after {
@@ -284,10 +297,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        right: -110px;
+        left: 240px;
         background-color: $basicgreen;
         height: 2px;
-        width: 1078px;
+        width: 1000%;
       }
     }
   }
