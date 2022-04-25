@@ -1,6 +1,15 @@
 .extra-cards {
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
+}
+
+.extra-cards__wrapper {
   width: 280px;
   padding: 20px 20px 35px 20px;
+  margin: 0 auto;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -53,7 +62,7 @@
       top: 60px;
       left: 267px;
       border-top: 2px solid $basicgreen;
-      width: 53px;
+      width: 1000%;
     }
   }
 
@@ -70,9 +79,9 @@
       display: block;
       position: absolute;
       top: 70px;
-      left: 0;
+      left: -1000%;
       border-top: 2px solid $basicgreen;
-      width: 30px;
+      width: calc(30px + 1000%);
     }
 
     &::after {
@@ -80,9 +89,9 @@
       display: block;
       position: absolute;
       top: 70px;
-      left: 441px;
+      left: 438px;
       border-top: 2px solid $basicgreen;
-      width: 328px;
+      width: 1000%;
     }
   }
 
