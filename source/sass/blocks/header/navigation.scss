@@ -19,23 +19,25 @@
   min-height: 20px;
   border: none;
   background-color: transparent;
-  border-bottom: 1.5px solid #000000;
+  border-top: 2px solid #000000;
   cursor: pointer;
 
   &::after {
     content: "";
     display: block;
+    position: absolute;
+    top: 7px;
     min-width: 24px;
-    border-bottom: 1.5px solid #000000;
+    border-bottom: 2px solid #000000;
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: -1px;
+    top: 15px;
     display: block;
     min-width: 24px;
-    border-top: 1.5px solid #000000;
+    border-top: 2px solid #000000;
   }
 
   @media (min-width: $tablet-width) {

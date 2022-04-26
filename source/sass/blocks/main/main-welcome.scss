@@ -112,6 +112,10 @@
   padding: 11px 44px;
   color: #ffffff;
 
+  @media (min-width: $mobile-width-only) {
+    margin-top: 12px;
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 244px;
     padding: 14px 26px;

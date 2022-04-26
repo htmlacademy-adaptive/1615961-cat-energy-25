@@ -59,6 +59,10 @@
   }
 }
 
+.header__logo-image {
+  z-index: 2;
+}
+
 .header__logo-text {
   @media (min-width: $tablet-width) {
     display: none;

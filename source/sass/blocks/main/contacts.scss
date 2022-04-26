@@ -76,11 +76,13 @@
 .contacts__map {
   display: block;
   min-width: 320px;
+  max-height: 362px;
   width: 100%;
   border: none;
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
+    max-height: 400px;
   }
 
   @media (min-width: $desktop-width) {

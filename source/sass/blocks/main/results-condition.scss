@@ -11,7 +11,7 @@
 
 .results-condition__button {
   font-family: "Oswald", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
@@ -41,11 +41,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 6px;
-    left: 58px;
+    top: 8px;
+    left: 62px;
     display: block;
-    width: 86px;
-    height: 14px;
+    width: 83px;
+    height: 12px;
     background-color: #ffffff;
     border-radius: 6px;
     border: 1px solid #cdcdcd;
@@ -65,8 +65,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 11px;
-    left: 63px;
+    top: 12px;
+    left: 67px;
     display: block;
     width: 36px;
     height: 6px;

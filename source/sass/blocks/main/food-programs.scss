@@ -16,7 +16,7 @@
   position: relative;
   margin: 0 auto;
   width: 320px;
-  padding: 20px;
+  padding: 12px 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -43,7 +43,7 @@
     width: 240px;
     border-bottom: 1px solid #d9d9d9;
     position: absolute;
-    top: 229px;
+    top: 220px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -75,7 +75,7 @@
     width: 240px;
     border-bottom: 1px solid #d9d9d9;
     position: absolute;
-    top: 515px;
+    top: 505px;
 
     @media (min-width: $tablet-width) {
       display: none;
