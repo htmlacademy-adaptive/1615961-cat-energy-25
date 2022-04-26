@@ -2,7 +2,7 @@
   box-sizing: border-box;
   min-height: 45px;
   border: 1px solid #e7e7e7;
-  margin-left: 3px;
+  margin-left: 5px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -13,6 +13,7 @@
 
   &--name {
     width: 229px;
+    margin-left: 9px;
 
     @media (min-width: $tablet-width) {
       width: 567px;
@@ -25,6 +26,7 @@
 
   &--weight {
     width: 204px;
+    margin-left: 12px;
 
     @media (min-width: $tablet-width) {
       width: 536px;
@@ -37,6 +39,7 @@
 
   &--age {
     width: 172px;
+    margin-left: 10px;
 
     @media (min-width: $tablet-width) {
       width: 497px;
@@ -48,7 +51,8 @@
   }
 
   &--email {
-    width: 219px;
+    width: 217px;
+    margin-left: 8px;
 
     @media (min-width: $tablet-width) {
       width: 551px;
@@ -62,7 +66,7 @@
   &--icon-email {
     position: absolute;
     top: 5px;
-    left: 250px;
+    left: 245px;
 
     @media (min-width: $tablet-width) {
       left: 580px;
@@ -75,6 +79,7 @@
 
   &--phone {
     width: 204px;
+    margin-left: 5px;
 
     @media (min-width: $tablet-width) {
       width: 535px;
@@ -87,8 +92,8 @@
 
   &--icon-phone {
     position: absolute;
-    top: 5px;
-    left: 250px;
+    top: 2px;
+    left: 245px;
 
     @media (min-width: $tablet-width) {
       left: 580px;

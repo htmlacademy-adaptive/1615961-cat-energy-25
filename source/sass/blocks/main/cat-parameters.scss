@@ -40,7 +40,7 @@
       width: 2000%;
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
-      top: 180px;
+      top: 186px;
       left: -1000%;
     }
   }
@@ -52,7 +52,7 @@
 }
 
 .cat-parameters__wishes {
-  margin: 0 0 55px 0;
+  margin: 0 0 52px 0;
   padding: 0;
   border: none;
 
@@ -63,7 +63,7 @@
       width: 2000%;
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
-      top: 330px;
+      top: 343px;
       left: -1000%;
     }
   }
@@ -88,14 +88,14 @@
 }
 
 .cat-parameters__comment {
-  margin: 0 0 22px 0;
+  margin: 0 0 25px 0;
   padding: 0;
   border: none;
   position: relative;
 }
 
 .cat-parameters__additional {
-  margin: 0 0 34px 0;
+  margin: 0 0 40px 0;
   padding: 0;
   border: none;
   position: relative;
@@ -113,8 +113,8 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
-        left: 221px;
+        top: 17px;
+        left: 205px;
         background-color: $basicgreen;
         height: 2px;
         width: 1000%;
@@ -180,7 +180,7 @@
         display: block;
         position: absolute;
         top: 15px;
-        left: 163px;
+        left: 145px;
         background-color: $basicgreen;
         height: 2px;
         width: 1000%;
@@ -241,12 +241,14 @@
 
   &--additional {
     @media (max-width: $mobile-width-only) {
+      margin-bottom: 40px;
+
       &::after {
         content: "";
         display: block;
         position: absolute;
         top: 15px;
-        left: 184px;
+        left: 165px;
         background-color: $basicgreen;
         height: 2px;
         width: 1000%;
@@ -313,15 +315,15 @@
 }
 
 .cat-parameters__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .cat-parameters__item--radio:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 24px;
 }
 
 .cat-parameters__item--checkbox:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .cat-parameters__control {
@@ -359,7 +361,7 @@
   color: #444444;
 
   &--radio {
-    margin-left: 40px;
+    margin-left: 45px;
   }
 
   &--radio:hover {
@@ -367,7 +369,7 @@
   }
 
   &--checkbox {
-    margin-left: 40px;
+    margin-left: 45px;
   }
 
   &--checkbox:hover {
@@ -400,7 +402,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  padding: 7px 44px;
+  padding: 10px 44px;
   border: none;
   min-width: 280px;
   margin-bottom: 21px;
