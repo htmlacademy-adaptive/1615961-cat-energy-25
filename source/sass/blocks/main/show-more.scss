@@ -2,14 +2,14 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    padding: 25px 0 0 0;
+    padding: 10px 0 0 0;
 
     &::after {
       content: "";
       display: block;
       width: 2000%;
       position: relative;
-      top: 20px;
+      top: 23px;
       left: -1000%;
       border-bottom: 1px solid #d9d9d9;
     }
@@ -84,8 +84,8 @@
     box-sizing: border-box;
     width: 30px;
     position: absolute;
-    top: 40px;
-    left: 130px;
+    top: 30px;
+    left: 125px;
     border-bottom: 2px solid #d3d3d3;
 
     @media (min-width: $tablet-width) {
@@ -107,8 +107,8 @@
     box-sizing: border-box;
     width: 30px;
     position: absolute;
-    top: 40px;
-    left: 130px;
+    top: 30px;
+    left: 125px;
     border-bottom: 2px solid #d3d3d3;
     transform: rotate(90deg);
 
