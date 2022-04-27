@@ -75,7 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 40px 0 40px 80px;
+    margin: 53px 0 40px 80px;
   }
 }
 
@@ -112,17 +112,18 @@
   padding: 11px 44px;
   color: #ffffff;
 
-  @media (min-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     margin: 12px 0 0 4px;
   }
 
   @media (min-width: $tablet-width) {
     max-width: 244px;
     padding: 14px 26px;
+    margin: 12px 0 0 4px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin: 0 0 0 80px;
   }
 }
 
@@ -154,7 +155,7 @@
     height: 499px;
     position: absolute;
     z-index: 1;
-    left: 550px;
-    top: 180px;
+    left: 560px;
+    top: 140px;
   }
 }
