@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1440px;
-    padding: 84px 110px;
+    padding: 60px 110px 30px 110px;
   }
 }
 
@@ -41,6 +41,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 245px 245px 245px 245px;
-    gap: 63px 80px;
+    gap: 40px 80px;
   }
 }

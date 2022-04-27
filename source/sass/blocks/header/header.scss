@@ -63,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     background: linear-gradient(to right, #ffffff 50%, #ffffff 100%);
+    padding: 55px 110px 30px 110px;
   }
 }
 
@@ -71,6 +72,10 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 94px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 24px;
   }
 }
 

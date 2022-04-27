@@ -137,6 +137,11 @@
     margin: 0 auto;
     padding-top: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    line-height: 21px;
+  }
 }
 
 .food-card__properties {
@@ -155,7 +160,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 90px 90px;
+    grid-template-columns: 80px 85px;
+    padding: 0 3px;
+    margin: 24px 0 32px 0;
   }
 }
 
@@ -208,6 +215,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 53px;
-    margin: 0;
+    margin-right: 10px;
   }
 }
