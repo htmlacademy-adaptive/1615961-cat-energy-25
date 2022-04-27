@@ -21,10 +21,10 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 126px 126px;
-    grid-template-rows: 220px auto auto auto;
+    grid-template-rows: 205px max-content max-content max-content;
     padding: 0 37px 39px 39px;
     margin-bottom: 0;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, #f2f2f2 20%, #f2f2f2 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 17%, #f2f2f2 17%, #f2f2f2 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -44,17 +44,13 @@
 }
 
 .food-card__image {
-  display: block;
-
   &--500g {
     @media (max-width: $mobile-width-only) {
       margin: 20px auto -15px auto;
     }
 
     @media (min-width: $tablet-width) {
-      width: 163px;
-      height: 174px;
-      margin: 60px auto 0 auto;
+      margin: 50px auto 0 auto;
     }
   }
 
@@ -64,12 +60,61 @@
     }
 
     @media (min-width: $tablet-width) {
+      margin: 20px auto 0 auto;
+    }
+  }
+
+  &--500g-chicken {
+    @media (min-width: $tablet-width) {
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  &--1000g-chicken {
+    @media (min-width: $tablet-width) {
       width: 168px;
-      height: 202px;
-      margin: 30px auto 0 auto;
+      height: 206px;
+    }
+  }
+
+  &--500g-fish {
+    @media (min-width: $tablet-width) {
+      width: 163px;
+      height: 174px;
+    }
+  }
+
+  &--1000g-fish {
+    @media (min-width: $tablet-width) {
+      width: 168px;
+      height: 200px;
+    }
+  }
+
+  &--500g-buckwheat {
+    @media (min-width: $tablet-width) {
+      width: 161px;
+      height: 171px;
+    }
+  }
+
+  &--1000g-buckwheat {
+    @media (min-width: $tablet-width) {
+      width: 168px;
+      height: 200px;
+    }
+  }
+
+  &--500g-rice {
+    @media (min-width: $tablet-width) {
+      width: 163px;
+      height: 174px;
     }
   }
 }
+
+
 
 .food-card__name {
   font-size: 16px;
@@ -89,7 +134,8 @@
     text-align: center;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    margin: 30px auto 0 auto;
+    margin: 0 auto;
+    padding-top: 50px;
   }
 }
 
@@ -104,8 +150,8 @@
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     grid-template-columns: 126px 126px;
-    grid-row-gap: 14px;
-    margin-bottom: 33px;
+    grid-row-gap: 6px;
+    margin: 20px 0 30px 0;
   }
 
   @media (min-width: $desktop-width) {

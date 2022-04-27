@@ -55,6 +55,12 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 25px 30px;
+    justify-content: flex-start;
+  }
+
   @media (min-width: $desktop-width) {
     background: linear-gradient(to right, #ffffff 50%, #ffffff 100%);
   }
@@ -62,6 +68,10 @@
 
 .header__logo-image {
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 94px;
+  }
 }
 
 .header__logo-text {

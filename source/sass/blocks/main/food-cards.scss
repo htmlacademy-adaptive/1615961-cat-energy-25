@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 82px 30px 20px 30px;
+    padding: 70px 30px 20px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +36,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 60px;
+    gap: 50px 60px;
   }
 
   @media (min-width: $desktop-width) {

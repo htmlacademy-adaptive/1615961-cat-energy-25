@@ -50,6 +50,8 @@
   margin: auto auto auto 58px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
     top: 71px;
     left: 422px;
   }
