@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,6 +31,7 @@
       border-bottom: 1px solid #e6e6e6;
       position: relative;
       right: 30px;
+      top: 25px;
 
       @media (min-width: $desktop-width) {
         display: none;
@@ -65,7 +67,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 250px 250px;
-    gap: 37px 137px;
+    gap: 18px 135px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,7 +153,14 @@
   background-image: url("../img/green-background-4.svg");
 
   @media (min-width: $tablet-width) {
+    max-width: 245px;
     background-image: url("../img/img-tablet/green-background-4.svg");
     background-position: 0 40px;
+  }
+}
+
+.advantages__item-br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

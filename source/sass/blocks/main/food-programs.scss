@@ -4,10 +4,12 @@
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
+    margin-bottom: 0;
   }
 }
 
@@ -51,9 +53,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     background-image: url("../img/img-tablet/less-weight.svg");
     background-repeat: no-repeat;
-    background-position: 446px 92px;
+    background-position: 446px 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,9 +86,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     background-image: url("../img/img-tablet/more-weight.svg");
     background-repeat: no-repeat;
-    background-position: 412px 91px;
+    background-position: 409px 91px;
   }
 
   @media (min-width: $desktop-width) {
