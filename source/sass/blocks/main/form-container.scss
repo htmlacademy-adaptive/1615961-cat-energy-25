@@ -23,6 +23,11 @@
     line-height: 60px;
     margin: 0 0 0 39px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 40px 0 0 0;
+  }
 }
 
 .form-container__description-wrapper {

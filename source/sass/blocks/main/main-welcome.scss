@@ -113,7 +113,7 @@
   color: #ffffff;
 
   @media (max-width: $mobile-width-only) {
-    margin: 12px 0 0 4px;
+    margin: 12px 0 0 0;
   }
 
   @media (min-width: $tablet-width) {
