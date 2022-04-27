@@ -11,6 +11,12 @@
   padding: 13px 36px 13px 15px;
   color: #444444;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 11px 36px 11px 19px;
+  }
+
   &--name {
     width: 229px;
     margin-left: 9px;

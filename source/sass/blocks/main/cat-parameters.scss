@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 0 30px;
+    padding: 0 30px 0 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +43,10 @@
       top: 186px;
       left: -1000%;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 78px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -72,6 +76,7 @@
     border: 1px solid #e7e7e7;
     padding: 25px 5px 29px 25px;
     width: 595px;
+    margin: 0 0 70px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,6 +90,10 @@
   padding: 0;
   border: none;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 65px 0;
+  }
 }
 
 .cat-parameters__comment {
@@ -92,6 +101,10 @@
   padding: 0;
   border: none;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 90px 0;
+  }
 }
 
 .cat-parameters__additional {
@@ -99,6 +112,10 @@
   padding: 0;
   border: none;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px 0;
+  }
 }
 
 .cat-parameters__legend {
@@ -124,6 +141,7 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
+      margin: 0 0 75px 0;
 
       &::before {
         content: "";
@@ -190,6 +208,7 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
+      margin: 0 0 75px 0;
 
       &::before {
         content: "";
@@ -258,6 +277,7 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
+      margin: 0 0 63px 0;
 
       &::before {
         content: "";
@@ -316,6 +336,10 @@
 
 .cat-parameters__item:not(:last-child) {
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
 }
 
 .cat-parameters__item--radio:not(:last-child) {
@@ -324,6 +348,10 @@
 
 .cat-parameters__item--checkbox:not(:last-child) {
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+  }
 }
 
 .cat-parameters__control {
@@ -344,7 +372,7 @@
 .cat-parameters__list--additional {
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 300px 265px;
+    grid-template-columns: 345px 265px;
   }
 
   @media (min-width: $desktop-width) {
@@ -360,8 +388,17 @@
   text-transform: uppercase;
   color: #444444;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &--radio {
     margin-left: 45px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+    }
   }
 
   &--radio:hover {
@@ -370,6 +407,10 @@
 
   &--checkbox {
     margin-left: 45px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 60px;
+    }
   }
 
   &--checkbox:hover {
@@ -409,7 +450,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 26px;
     padding: 13px 45px;
+    margin-bottom: 73px;
   }
 }
 
@@ -424,6 +467,7 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-left: 61px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
