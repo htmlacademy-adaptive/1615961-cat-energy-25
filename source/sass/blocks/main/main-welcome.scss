@@ -23,9 +23,19 @@
     min-width: 1440px;
     background-image: url("../img/img-desktop/background-main.jpg");
     background-repeat: no-repeat;
-    box-shadow: inset -720px 0 0 0 rgba(104, 183, 56, 0.85);
     background-position: 100% 0;
     margin-top: -150px;
+
+    &::after {
+      content:"";
+      display: block;
+      position: absolute;
+      width: 50%;
+      min-height: 694px;
+      background-color: rgba(104, 183, 56, 0.85);
+      left: 50%;
+      top: 0;
+    }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/img-desktop/background-main@2x.jpg");
