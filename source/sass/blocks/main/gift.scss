@@ -50,12 +50,15 @@
   margin: auto auto auto 58px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    text-align: left;
     top: 71px;
     left: 422px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 171px;
-    left: -15px;
+    top: 190px;
+    left: 45px;
+    text-align: center;
   }
 }

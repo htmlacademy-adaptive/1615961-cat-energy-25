@@ -1,20 +1,40 @@
 .food-programs {
-  padding: 20px;
-  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    min-width: 768px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1440px;
+    margin-bottom: 0;
+  }
+}
+
+.food-programs__wrapper {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  padding: 12px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
     padding: 20px 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 82px 110px 20px 110px;
     display: flex;
     flex-wrap: wrap;
-    padding: 82px 110px 20px 110px;
   }
 }
 
 .food-programs__less-weight {
-  background-image: url("../img/less-weight.png");
+  background-image: url("../img/less-weight.svg");
   background-repeat: no-repeat;
   background-position: 22px 21px;
   margin-bottom: 20px;
@@ -25,7 +45,7 @@
     width: 240px;
     border-bottom: 1px solid #d9d9d9;
     position: absolute;
-    top: 229px;
+    top: 220px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -33,15 +53,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
     background-image: url("../img/img-tablet/less-weight.svg");
     background-repeat: no-repeat;
-    background-position: 446px 92px;
+    background-position: 446px 80px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/img-desktop/less-weight.svg");
     background-repeat: no-repeat;
-    background-position: 52px 47px;
+    background-position: 52px 40px;
   }
 }
 
@@ -57,7 +78,7 @@
     width: 240px;
     border-bottom: 1px solid #d9d9d9;
     position: absolute;
-    top: 515px;
+    top: 505px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -65,14 +86,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     background-image: url("../img/img-tablet/more-weight.svg");
     background-repeat: no-repeat;
-    background-position: 412px 91px;
+    background-position: 409px 91px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/img-desktop/more-weight.svg");
     background-repeat: no-repeat;
-    background-position: 52px 47px;
+    background-position: 33px 47px;
+    margin-bottom: 30px;
   }
 }
