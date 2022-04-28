@@ -107,7 +107,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 500px;
+      left: 530px;
     }
   }
 
@@ -138,5 +138,15 @@
   &--error {
     outline: 2px solid #ff8282;
     outline-offset: -1px;
-  }
+}
+}
+
+.control-input--phone-error {
+  outline: 2px solid #ff8282;
+  outline-offset: -1px;
+}
+
+.control-input--email-error {
+  outline: 2px solid #ff8282;
+  outline-offset: -1px;
 }
