@@ -63,21 +63,103 @@
 }
 
 .food-program__link {
+  display: block;
   font-display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  margin-right: 13px;
+  width: 70%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    width: 150px;
-    margin: 0 25px 0 27px;
+    margin: 0 0 0 27px;
+    width: 40%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 150px;
-    margin: 0 28px 0 0;
+    margin: 0;
+    width: 50%;
+  }
+}
+
+.food-program__link-less-weight {
+  background: url("../img/icons/icon-arrow.svg") no-repeat;
+  background-position: 100px 2px;
+
+  &:hover {
+    background: url("../img/icons/icon-arrow-hover.svg") no-repeat 100px 2px;
+  }
+
+  &:active {
+    background: url("../img/icons/icon-arrow-hover.svg") no-repeat 100px 2px;
+    opacity: 0.4;
+  }
+
+  @media (min-width:  $tablet-width) {
+    background-position: 135px 10px;
+
+    &:hover {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+    }
+
+    &:active {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width:  $desktop-width) {
+    background-position: 138px 10px;
+
+    &:hover {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+    }
+
+    &:active {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      opacity: 0.4;
+    }
+  }
+}
+
+
+.food-program__link-more-weight {
+  background: url("../img/icons/icon-arrow.svg") no-repeat;
+  background-position: 100px 2px;
+
+  &:hover {
+    background: url("../img/icons/icon-arrow-hover.svg") no-repeat 100px 2px;
+  }
+
+  &:active {
+    background: url("../img/icons/icon-arrow-hover.svg") no-repeat 100px 2px;
+    opacity: 0.4;
+  }
+
+  @media (min-width:  $tablet-width) {
+    background-position: 135px 10px;
+
+    &:hover {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+    }
+
+    &:active {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      opacity: 0.4;
+    }
+  }
+
+  @media (min-width:  $desktop-width) {
+    background-position: 138px 10px;
+
+    &:hover {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+    }
+
+    &:active {
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      opacity: 0.4;
+    }
   }
 }
