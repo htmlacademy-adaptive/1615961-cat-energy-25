@@ -13,6 +13,11 @@
   position: absolute;
   top: -5px;
 
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
   &:hover {
     border: 1px solid #bababa;
     cursor: pointer;
@@ -33,6 +38,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/icons/icon-v-big.svg") no-repeat center;
+  }
 }
 
 .control-checkbox:disabled + .control-checkbox__mark {

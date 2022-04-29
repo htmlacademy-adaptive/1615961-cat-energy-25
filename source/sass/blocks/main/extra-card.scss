@@ -1,11 +1,12 @@
 .extra-card {
-  padding: 13px 0 19px 0;
+  padding: 12px 0 19px 0;
   border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     border: 1px solid #cdcdcd;
     border-bottom: none;
-    padding: 26px 38px 28px 38px;
+    padding: 26px 38px 27px 38px;
 
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
@@ -15,7 +16,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 651px 245px;
-    padding: 16px 0 17px 0;
+    padding: 16px 0 16px 0;
     gap: 38px 0;
     border: none;
     border-top: 1px solid #cdcdcd;
@@ -70,6 +71,12 @@
     text-align: end;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
   }
 }
 
@@ -88,6 +95,8 @@
     text-align: end;
     grid-column: 3 / 4;
     grid-row: 1 / 2;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -100,7 +109,7 @@
   padding: 10px 109px;
 
   @media (min-width: $tablet-width) {
-    padding: 7px 286px;
+    padding: 10px 286px;
   }
 
   @media (min-width: $desktop-width) {

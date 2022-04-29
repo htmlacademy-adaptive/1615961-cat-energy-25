@@ -1,5 +1,11 @@
 .contacts {
   position: relative;
+  margin: 0 auto;
+  min-width: 320px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+  }
 
   &--inner {
     background-color: #f2f2f2;
@@ -7,13 +13,17 @@
 }
 
 .contacts__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
   padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 56px 70px;
+    padding: 60px 70px 60px 70px;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +33,7 @@
     justify-content: space-between;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc((100vw - 1440px) / 2 + 110px);
     background-color: #ffffff;
     padding: 56px 80px;
     width: 565px;
@@ -43,6 +53,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 171px;
   }
 }
 
@@ -65,14 +76,17 @@
 
 .contacts__map {
   display: block;
-  width: 320px;
+  min-width: 320px;
+  max-height: 362px;
+  width: 100%;
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    min-width: 768px;
+    max-height: 400px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
+    min-width: 1440px;
   }
 }
