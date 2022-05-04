@@ -28,6 +28,13 @@
   }
 }
 
+.cat-parameters__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 75px;
+  }
+}
+
 .cat-parameters__common {
   margin: 0 0 55px 0;
   padding: 0;
@@ -52,7 +59,7 @@
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 570px;
-    margin: 0 0 75px 0;
+    margin: 0;
   }
 }
 
@@ -84,7 +91,7 @@
     display: inline-block;
     width: 533px;
     padding: 25px 5px 29px 25px;
-    margin: 0 0 75px 75px;
+    margin: 0 0 0 75px;
   }
 }
 
