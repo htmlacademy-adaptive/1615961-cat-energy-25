@@ -28,20 +28,28 @@
   }
 }
 
+.cat-parameters__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    margin-bottom: 75px;
+  }
+}
+
 .cat-parameters__common {
   margin: 0 0 55px 0;
   padding: 0;
   border: none;
+  position: relative;
 
   @media (max-width: $mobile-width-only) {
     &::before {
       content: "";
       display: block;
-      width: 2000%;
+      width: 200vw;
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
       top: 186px;
-      left: -1000%;
+      left: -100vw;
     }
   }
 
@@ -52,7 +60,7 @@
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 570px;
-    margin: 0 0 75px 0;
+    margin: 0;
   }
 }
 
@@ -84,7 +92,7 @@
     display: inline-block;
     width: 533px;
     padding: 25px 5px 29px 25px;
-    margin: 0 0 75px 75px;
+    margin: 0 0 0 75px;
   }
 }
 
@@ -92,7 +100,6 @@
   margin: 0 0 24px 0;
   padding: 0;
   border: none;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 65px 0;
@@ -138,6 +145,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
+  position: relative;
 
   &--contacts {
     @media (max-width: $mobile-width-only) {
@@ -149,7 +157,7 @@
         left: 205px;
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
 
@@ -163,9 +171,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -1000%;
+        left: -100vw;
         background-color: $basicgreen;
-        width: calc(1000% - 30px);
+        width: calc(100vw - 30px);
         height: 2px;
       }
 
@@ -174,9 +182,9 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 540px;
+        right: calc(-1 * (100vw + 42px));
         background-color: $basicgreen;
-        width: 1000%;
+        width: 100vw;
         height: 2px;
       }
     }
@@ -189,10 +197,10 @@
         display: block;
         position: absolute;
         top: 16px;
-        left: -1000%;
+        left: -100vw;
         background-color: $basicgreen;
         height: 2px;
-        width: calc(1000% - 40px);
+        width: calc(100vw - 40px);
       }
 
       &::after {
@@ -200,10 +208,10 @@
         display: block;
         position: absolute;
         top: 16px;
-        left: 550px;
+        right: calc(-1 * (100vw + 42px));
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
   }
@@ -218,7 +226,7 @@
         left: 145px;
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
 
@@ -232,10 +240,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -1000%;
+        left: -100vw;
         background-color: $basicgreen;
         height: 2px;
-        width: calc(1000% - 30px);
+        width: calc(100vw - 30px);
       }
 
       &::after {
@@ -246,7 +254,7 @@
         left: 220px;
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
 
@@ -256,10 +264,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -1000%;
+        left: -100vw;
         background-color: $basicgreen;
         height: 2px;
-        width: calc(1000% - 40px);
+        width: calc(100vw - 40px);
       }
 
       &::after {
@@ -267,10 +275,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 220px;
+        left: 222px;
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
   }
@@ -287,7 +295,7 @@
         left: 165px;
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
 
@@ -301,10 +309,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: -1000%;
+        left: -100vw;
         background-color: $basicgreen;
         height: 2px;
-        width: calc(1000% - 30px);
+        width: calc(100vw - 30px);
       }
 
       &::after {
@@ -312,10 +320,10 @@
         display: block;
         position: absolute;
         top: 20px;
-        left: 250px;
+        right: calc(-1 * (100vw + 40px));
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
 
@@ -325,10 +333,10 @@
         display: block;
         position: absolute;
         top: 23px;
-        left: -1000%;
+        left: -100vw;
         background-color: $basicgreen;
         height: 2px;
-        width: calc(1000% - 40px);
+        width: calc(100vw - 40px);
       }
 
       &::after {
@@ -336,10 +344,10 @@
         display: block;
         position: absolute;
         top: 23px;
-        left: 240px;
+        right: calc(-1 * (100vw + 40px));
         background-color: $basicgreen;
         height: 2px;
-        width: 1000%;
+        width: 100vw;
       }
     }
   }

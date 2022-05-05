@@ -26,13 +26,24 @@
     background-position: 100% 0;
     margin-top: -150px;
 
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 720px;
+      min-height: 694px;
+      background-color: rgba(104, 183, 56, 0.85);
+      left: calc(100vw - 720px);
+      top: 0;
+    }
+
     &::after {
       content: "";
       display: block;
       position: absolute;
-      width: 50%;
+      width: calc(50vw - 720px);
       min-height: 694px;
-      background-color: rgba(104, 183, 56, 0.85);
+      background-color: #64a83c;
       left: 50%;
       top: 0;
     }
