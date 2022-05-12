@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../favicon.ico">
@@ -105,9 +107,9 @@
             <ul class="cat-parameters__list cat-parameters__list--owner">
               <li class="cat-parameters__item">
                 <label class="cat-parameters__control">
-                  <span class="cat-parameters__text">E-mail:*</span>
+                  <span class="cat-parameters__text">E-mail:</span>
                   <input class="control-input control-input--email" type="email" name="cat-name" placeholder="kuklachev@gmail.com" required>
-                  <svg class="control-input--icon-email" width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="control-input--icon-email" width="19" height="14" viewBox="0 0 19 14" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#icon-email"></use>
                   </svg>
                 </label>
@@ -126,7 +128,7 @@
           <fieldset class="cat-parameters__comment">
             <legend class="cat-parameters__legend cat-parameters__legend--comments">Комментарий</legend>
             <label class="cat-parameters__control">
-              <input class="control-input control-input--comment control-input-error" type="text" name="cat-name" placeholder="Расскажите обо всех повадках кота" required>
+              <textarea class="control-input control-input--comment" type="text" name="cat-name" placeholder="Расскажите обо всех повадках кота" required></textarea>
             </label>
           </fieldset>
           <fieldset class="cat-parameters__additional">
