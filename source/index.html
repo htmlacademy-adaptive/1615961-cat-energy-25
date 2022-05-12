@@ -7,7 +7,6 @@
     <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../favicon.ico">
     <link rel="favicon" href="../favicon.webmanifest">
   </head>
@@ -48,8 +47,11 @@
           <h1 class="main-welcome__title">Функциональное питание для котов</h1>
           <p class="main-welcome__text">Занялся собой? Займись котом!</p>
           <picture>
+            <source media="(min-width: 1440px)" srcset="img/img-desktop/can-food.webp 1x, img/img-desktop/can-food@2x.webp 2x" type="image/webp">
             <source media="(min-width: 1440px)" srcset="img/img-desktop/can-food.png 1x, img/img-desktop/can-food@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/img-tablet/can-food.webp 1x, img/img-tablet/can-food@2x.webp 2x" type="image/webp">
             <source media="(min-width: 768px)" srcset="img/img-tablet/can-food.png 1x, img/img-tablet/can-food@2x.png 2x">
+            <source srcset="img/can-food.webp 1x, img/can-food@2x.webp 2x" type="image/webp">
             <img class="main-welcome__image" src="img/can-food.png" srcset="img/can-food@2x.png 2x" width="280" height="270" alt="Банка с кормом Cat Energy со вкусом курицы.">
           </picture>
             <a class="main-welcome__button button" href="form.html">
@@ -112,7 +114,7 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8<br class="contacts__br"><br class="contacts__br">Санкт-Петербург</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br class="contacts__br">Санкт-Петербург</p>
         </div>
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002935!2d30.320858715859668!3d59.93871916905446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650010073866!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy"         title="Офис компании по адресу Большая Конюшенная 19/8 Санкт-Петербург">
         </iframe>
@@ -168,7 +170,6 @@
         </section>
       </div>
     </footer>
-    <script src="js/script.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
