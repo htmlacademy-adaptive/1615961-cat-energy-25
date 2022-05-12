@@ -137,11 +137,12 @@
     width: 280px;
     min-height: 150px;
     margin-left: 0;
-    padding: 13px 15px;
+    padding: 13px 12px 13px 15px;
     resize: none;
 
     @media (min-width: $tablet-width) {
       width: 631px;
+      padding: 13px 15px;
     }
 
     @media (min-width: $desktop-width) {
