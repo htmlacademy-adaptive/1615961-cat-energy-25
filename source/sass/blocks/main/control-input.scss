@@ -69,8 +69,8 @@
   }
 
   &--email {
-    width: 217px;
-    margin-left: 8px;
+    width: 219px;
+    margin-left: 13px;
 
     @media (max-width: $mobile-width-only) {
       max-height: 46px;
@@ -90,15 +90,11 @@
   &--icon-email {
     position: absolute;
     top: 5px;
-    left: 245px;
+    right: 16px;
     color: #222222;
 
     @media (min-width: $tablet-width) {
-      left: 580px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 530px;
+      right: 19px;
     }
   }
 
@@ -122,15 +118,11 @@
   &--icon-phone {
     position: absolute;
     top: 2px;
-    left: 245px;
+    right: 13px;
     color: #222222;
 
     @media (min-width: $tablet-width) {
-      left: 580px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 530px;
+      right: 17px;
     }
   }
 
