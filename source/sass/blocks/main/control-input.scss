@@ -69,8 +69,8 @@
   }
 
   &--email {
-    width: 217px;
-    margin-left: 8px;
+    width: 219px;
+    margin-left: 13px;
 
     @media (max-width: $mobile-width-only) {
       max-height: 46px;
@@ -78,6 +78,7 @@
 
     @media (min-width: $tablet-width) {
       width: 551px;
+      margin-left: 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -89,15 +90,11 @@
   &--icon-email {
     position: absolute;
     top: 5px;
-    left: 245px;
+    right: 16px;
     color: #222222;
 
     @media (min-width: $tablet-width) {
-      left: 580px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 530px;
+      right: 19px;
     }
   }
 
@@ -121,15 +118,11 @@
   &--icon-phone {
     position: absolute;
     top: 2px;
-    left: 245px;
+    right: 13px;
     color: #222222;
 
     @media (min-width: $tablet-width) {
-      left: 580px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 530px;
+      right: 17px;
     }
   }
 
@@ -137,11 +130,12 @@
     width: 280px;
     min-height: 150px;
     margin-left: 0;
-    padding: 13px 15px;
+    padding: 13px 12px 13px 15px;
     resize: none;
 
     @media (min-width: $tablet-width) {
       width: 631px;
+      padding: 13px 15px;
     }
 
     @media (min-width: $desktop-width) {

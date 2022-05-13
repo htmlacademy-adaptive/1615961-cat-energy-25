@@ -100,6 +100,10 @@
 .results__numbers--weight {
   position: relative;
 
+  @media (max-width: $mobile-width-only) {
+    margin-right: 32px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
@@ -228,6 +232,7 @@
 .results__cost--text {
   @media (max-width: $mobile-width-only) {
     margin-left: 46px;
+    margin-right: 2px;
   }
 
   @media (min-width: $tablet-width) {
@@ -250,6 +255,7 @@
     grid-row: 3 / 4;
     position: relative;
     top: 38px;
+    right: 8px;
   }
 
   @media (min-width: $desktop-width) {
