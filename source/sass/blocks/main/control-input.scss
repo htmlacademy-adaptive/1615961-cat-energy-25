@@ -87,17 +87,6 @@
     }
   }
 
-  &--icon-email {
-    position: absolute;
-    top: 5px;
-    right: 16px;
-    color: #222222;
-
-    @media (min-width: $tablet-width) {
-      right: 19px;
-    }
-  }
-
   &--phone {
     width: 204px;
     margin-left: 5px;
@@ -112,17 +101,6 @@
 
     @media (min-width: $desktop-width) {
       width: 472px;
-    }
-  }
-
-  &--icon-phone {
-    position: absolute;
-    top: 2px;
-    right: 13px;
-    color: #222222;
-
-    @media (min-width: $tablet-width) {
-      right: 17px;
     }
   }
 
@@ -158,28 +136,12 @@
   }
 }
 
-.control-input--email:focus + .control-input--icon-email {
-  color: #68b738;
-}
-
-.control-input--phone:focus + .control-input--icon-phone {
-  color: #68b738;
-}
-
-.control-input--phone-error {
-  outline: 2px solid #ff8282;
-  outline-offset: -1px;
-}
-
-.control-input--phone-error + .control-input--icon-email {
-  color: #ff8282;
-}
-
 .control-input--email-error {
   outline: 2px solid #ff8282;
   outline-offset: -1px;
 }
 
-.control-input--email-error + .control-input--icon-email {
-  color: #ff8282;
+.control-input--phone-error {
+  outline: 2px solid #ff8282;
+  outline-offset: -1px;
 }

@@ -1,4 +1,4 @@
-.control-checkbox {
+.control-checkbox__field {
   appearance: none;
   margin: 0;
 }
@@ -24,11 +24,11 @@
   }
 }
 
-.cat-parameters__control:hover .control-checkbox__mark {
+.control-checkbox:hover .control-checkbox__mark {
   border: 1px solid #bababa;
 }
 
-.control-checkbox:checked + .control-checkbox__mark::after {
+.control-checkbox__field:checked + .control-checkbox__mark::after {
   content: "";
   display: block;
   width: 20px;
@@ -45,7 +45,7 @@
   }
 }
 
-.control-checkbox:disabled + .control-checkbox__mark {
+.control-checkbox__field:disabled + .control-checkbox__mark {
   border: 1px solid #bababa;
   opacity: 0.3;
   cursor: default;
