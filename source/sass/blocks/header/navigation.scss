@@ -194,6 +194,10 @@
   .navigation--nojs .navigation__list {
     display: block;
   }
+
+  .navigation--nojs .navigation__toggle {
+    opacity: 0;
+  }
 }
 
 .navigation__link--inner {
