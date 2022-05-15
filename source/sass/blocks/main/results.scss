@@ -86,7 +86,7 @@
 .results__numbers {
   display: inline-block;
   width: 124px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -231,8 +231,8 @@
 
 .results__cost--text {
   @media (max-width: $mobile-width-only) {
-    margin-left: 46px;
-    margin-right: 2px;
+    margin-left: 47px;
+    margin-right: 4px;
   }
 
   @media (min-width: $tablet-width) {
