@@ -93,7 +93,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 -20px 0;
+    margin: 7px 0 -20px 0;
   }
 }
 
@@ -124,6 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: 5px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }

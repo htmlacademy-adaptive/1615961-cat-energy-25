@@ -28,14 +28,11 @@
 
   @media (min-width: $desktop-width) {
     box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     position: absolute;
     top: 95px;
     left: calc((100vw - 1440px) / 2 + 110px);
     background-color: #ffffff;
-    padding: 56px 80px;
+    padding: 56px 80px 62px 80px;
     width: 565px;
   }
 }
@@ -71,6 +68,10 @@
     font-size: 16px;
     width: 160px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
