@@ -59,6 +59,8 @@
   border-bottom: 1px solid #cdcdcd;
 
   @media (max-width: $mobile-width-only) {
+    padding: 10px 0 34px 0;
+
     &::after {
       content: "";
       display: block;

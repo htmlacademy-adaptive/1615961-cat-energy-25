@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
-    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 58%, #eaeaea 58%, #eaeaea 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 57.5%, #eaeaea 57.5%, #eaeaea 100%);
   }
 
   @media (min-width: $desktop-width) {
@@ -25,7 +25,7 @@
     display: grid;
     grid-template-columns: 200px 200px 1fr;
     width: 768px;
-    padding: 50px 30px 56px 30px;
+    padding: 46px 30px 60px 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,14 +86,14 @@
 .results__numbers {
   display: inline-block;
   width: 124px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 -20px 0;
+    margin: 7px 0 -20px 0;
   }
 }
 
@@ -124,6 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    left: 5px;
     grid-column: 2 / 3;
     grid-row: 3 / 4;
   }
@@ -231,14 +232,14 @@
 
 .results__cost--text {
   @media (max-width: $mobile-width-only) {
-    margin-left: 46px;
-    margin-right: 2px;
+    margin-left: 47px;
+    margin-right: 4px;
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
     grid-row: 3 / 4;
-    margin: 10px 0 0 110px;
+    margin: 13px 0 0 114px;
   }
 
   @media (min-width: $desktop-width) {
@@ -254,8 +255,8 @@
     grid-column: 3 / 4;
     grid-row: 3 / 4;
     position: relative;
-    top: 38px;
-    right: 8px;
+    top: 42px;
+    right: 3px;
   }
 
   @media (min-width: $desktop-width) {

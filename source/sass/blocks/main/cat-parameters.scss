@@ -31,7 +31,8 @@
 .cat-parameters__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-bottom: 75px;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
   }
 }
 
@@ -48,19 +49,20 @@
       width: 200vw;
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
-      top: 186px;
+      top: 115%;
       left: -100vw;
     }
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 78px 0;
+    margin: 0 0 73px 0;
   }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 570px;
     margin: 0;
+    margin-bottom: 10px;
   }
 }
 
@@ -76,23 +78,23 @@
       width: 2000%;
       border-bottom: 1px solid #d9d9d9;
       position: absolute;
-      top: 343px;
+      top: 29%;
       left: -1000%;
     }
   }
 
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
-    padding: 25px 5px 29px 25px;
+    padding: 28px 5px 29px 25px;
     width: 595px;
-    margin: 0 0 70px 0;
+    margin: 0 0 75px 0;
   }
 
   @media (min-width: $desktop-width) {
     display: inline-block;
     width: 533px;
-    padding: 25px 5px 29px 25px;
-    margin: 0 0 0 75px;
+    padding: 28px 5px 29px 25px;
+    margin: 0 0 10px 81px;
   }
 }
 
@@ -106,7 +108,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 50px 0;
+    margin: 0 0 48px 0;
   }
 }
 
@@ -117,11 +119,11 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 90px 0;
+    margin: 0 0 65px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 90px 0;
+    margin: 0 0 68px 0;
   }
 }
 
@@ -136,7 +138,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 25px 0;
+    margin: 0 0 22px 0;
   }
 }
 
@@ -164,7 +166,7 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
-      margin: 0 0 75px 0;
+      margin: 0 0 75px -3px;
 
       &::before {
         content: "";
@@ -190,7 +192,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin: 0 0 65px 0;
+      margin: 0 0 69px 0;
 
       &::before {
         content: "";
@@ -233,13 +235,13 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
-      margin: 0 0 75px 0;
+      margin: 0 0 75px -3px;
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: -100vw;
         background-color: $basicgreen;
         height: 2px;
@@ -250,7 +252,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: 220px;
         background-color: $basicgreen;
         height: 2px;
@@ -263,7 +265,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: -100vw;
         background-color: $basicgreen;
         height: 2px;
@@ -274,7 +276,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: 222px;
         background-color: $basicgreen;
         height: 2px;
@@ -302,13 +304,13 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
-      margin: 0 0 63px 0;
+      margin: 0 0 63px -2px;
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: -100vw;
         background-color: $basicgreen;
         height: 2px;
@@ -319,7 +321,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         right: calc(-1 * (100vw + 40px));
         background-color: $basicgreen;
         height: 2px;
@@ -363,7 +365,11 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
@@ -421,10 +427,10 @@
   }
 
   &--radio {
-    margin-left: 45px;
+    padding-left: 45px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 60px;
+      padding-left: 60px;
     }
   }
 
@@ -433,10 +439,10 @@
   }
 
   &--checkbox {
-    margin-left: 45px;
+    padding-left: 45px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 60px;
+      padding-left: 58px;
     }
   }
 
@@ -500,11 +506,14 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-left: 61px;
+    margin: 0 0 0 63px;
     font-size: 16px;
+    position: relative;
+    top: -7px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 81px;
+    top: -5px;
   }
 }

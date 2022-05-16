@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 60px 52px;
 
     &:not(:last-child) {
       margin-right: 80px;
@@ -97,27 +97,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 135px 10px;
+    background-position: 128px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
       opacity: 0.4;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 138px 10px;
+    background-position: 135px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
       opacity: 0.4;
     }
   }
@@ -138,27 +138,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 135px 10px;
+    background-position: 128px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
       opacity: 0.4;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 138px 10px;
+    background-position: 130px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
       opacity: 0.4;
     }
   }

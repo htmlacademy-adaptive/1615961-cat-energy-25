@@ -16,16 +16,15 @@
 .header__wrapper {
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 320px;
   padding: 0 20px;
-  min-height: 66px;
+  min-height: 65px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;
-    padding: 25px 0 0 0;
+    padding: 25px 30px;
     min-height: 80px;
     justify-content: space-around;
   }
@@ -33,7 +32,7 @@
   @media (min-width: $desktop-width) {
     width: 1440px;
     min-height: 150px;
-    padding: 15px 110px 0 110px;
+    padding: 50px 110px 30px 110px;
   }
 }
 
@@ -68,6 +67,7 @@
 
 .header__logo-image {
   z-index: 2;
+  margin-right: 57px;
 
   @media (min-width: $tablet-width) {
     margin-right: 94px;

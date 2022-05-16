@@ -65,6 +65,11 @@
   }
 
   &--500g-chicken {
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+      top: -4px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 161px;
       height: 172px;
@@ -79,6 +84,11 @@
   }
 
   &--500g-fish {
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+      top: 6px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 163px;
       height: 174px;
@@ -93,6 +103,11 @@
   }
 
   &--500g-buckwheat {
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+      top: 9px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 161px;
       height: 171px;
@@ -107,6 +122,11 @@
   }
 
   &--500g-rice {
+    @media (max-width: $mobile-width-only) {
+      position: relative;
+      top: 4px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 163px;
       height: 174px;
@@ -120,6 +140,7 @@
   line-height: 20px;
   margin: 0;
   text-transform: uppercase;
+  text-decoration: none;
   color: #222222;
   grid-column: 2 / 3;
   grid-row: 1 / 2;

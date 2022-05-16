@@ -2,8 +2,13 @@
   position: relative;
   z-index: 2;
 
+  @media (max-width: $mobile-width-only) {
+    margin-left: auto;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +91,7 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     left: -276px;
-    top: 45px;
+    top: 44px;
     width: 320px;
     background-color: #ffffff;
   }
@@ -94,13 +99,16 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
     width: 440px;
     justify-content: flex-end;
+    margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 640px;
+    margin: 0;
   }
 }
 
@@ -193,6 +201,10 @@
   .navigation--opened .navigation__list,
   .navigation--nojs .navigation__list {
     display: block;
+  }
+
+  .navigation--nojs .navigation__toggle {
+    opacity: 0;
   }
 }
 
