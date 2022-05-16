@@ -81,12 +81,6 @@
   }
 }
 
-.contacts__br {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
 .contacts__map {
   display: block;
   min-width: 320px;
