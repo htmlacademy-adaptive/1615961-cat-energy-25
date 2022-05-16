@@ -2,6 +2,10 @@
   position: relative;
   z-index: 2;
 
+  @media (max-width: $mobile-width-only) {
+    margin-left: auto;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +91,7 @@
   @media (max-width: $mobile-width-only) {
     position: absolute;
     left: -276px;
-    top: 45px;
+    top: 44px;
     width: 320px;
     background-color: #ffffff;
   }
