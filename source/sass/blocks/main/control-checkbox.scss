@@ -19,10 +19,6 @@
     top: -10px;
   }
 
-  @media (min-width: $desktop-width) {
-    top: -5px;
-  }
-
   &:hover {
     border: 1px solid #bababa;
     cursor: pointer;
