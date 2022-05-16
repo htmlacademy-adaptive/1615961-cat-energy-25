@@ -89,14 +89,29 @@
   border: none;
   background-image: url("../img/map.jpg");
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     min-width: 768px;
     max-height: 400px;
     background-image: url("../img/img-tablet/map.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-tablet/map@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
     background-image: url("../img/img-desktop/map.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/img-desktop/map@2x.jpg");
+      background-size: 1440px auto;
+    }
   }
 }
