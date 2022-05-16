@@ -55,7 +55,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 78px 0;
+    margin: 0 0 73px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,9 +84,9 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid #e7e7e7;
-    padding: 25px 5px 29px 25px;
+    padding: 28px 5px 29px 25px;
     width: 595px;
-    margin: 0 0 70px 0;
+    margin: 0 0 75px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,7 +118,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 90px 0;
+    margin: 0 0 65px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -165,7 +165,7 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
-      margin: 0 0 75px 0;
+      margin: 0 0 75px -3px;
 
       &::before {
         content: "";
@@ -234,13 +234,13 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
-      margin: 0 0 75px 0;
+      margin: 0 0 75px -3px;
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: -100vw;
         background-color: $basicgreen;
         height: 2px;
@@ -251,7 +251,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: 220px;
         background-color: $basicgreen;
         height: 2px;
@@ -303,13 +303,13 @@
     @media (min-width: $tablet-width) {
       font-size: 36px;
       line-height: 36px;
-      margin: 0 0 63px 0;
+      margin: 0 0 63px -2px;
 
       &::before {
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         left: -100vw;
         background-color: $basicgreen;
         height: 2px;
@@ -320,7 +320,7 @@
         content: "";
         display: block;
         position: absolute;
-        top: 20px;
+        top: 22px;
         right: calc(-1 * (100vw + 40px));
         background-color: $basicgreen;
         height: 2px;
@@ -364,6 +364,10 @@
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 18px;
   }
 }
@@ -422,10 +426,10 @@
   }
 
   &--radio {
-    margin-left: 45px;
+    padding-left: 45px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 60px;
+      padding-left: 60px;
     }
   }
 
@@ -434,10 +438,10 @@
   }
 
   &--checkbox {
-    margin-left: 45px;
+    padding-left: 45px;
 
     @media (min-width: $tablet-width) {
-      margin-left: 60px;
+      padding-left: 58px;
     }
   }
 
@@ -501,11 +505,14 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-    margin-left: 61px;
+    margin: 0 0 0 63px;
     font-size: 16px;
+    position: relative;
+    top: -7px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 81px;
+    position: static;
   }
 }

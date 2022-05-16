@@ -87,13 +87,16 @@
   max-height: 362px;
   width: 100%;
   border: none;
+  background-image: url("../img/map.jpg");
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
     max-height: 400px;
+    background-image: url("../img/img-tablet/map.jpg");
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1440px;
+    background-image: url("../img/img-desktop/map.jpg");
   }
 }
