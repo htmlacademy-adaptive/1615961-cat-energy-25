@@ -13,6 +13,13 @@
   }
 }
 
+.header--inner {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 27px;
+  }
+}
+
 .header__wrapper {
   box-sizing: border-box;
   display: flex;
@@ -37,22 +44,6 @@
 }
 
 .header__wrapper--inner {
-  margin-bottom: 27px;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 1000%;
-    position: absolute;
-    top: 66px;
-    left: 0;
-    border-bottom: 1px solid #d9d9d9;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     padding: 25px 30px;

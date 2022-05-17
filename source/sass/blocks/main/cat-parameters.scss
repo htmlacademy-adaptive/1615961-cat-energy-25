@@ -429,6 +429,11 @@
   &--radio {
     padding-left: 45px;
 
+    @media (max-width: $mobile-width-only) {
+      width: 210px;
+      overflow: hidden;
+    }
+
     @media (min-width: $tablet-width) {
       padding-left: 60px;
     }
