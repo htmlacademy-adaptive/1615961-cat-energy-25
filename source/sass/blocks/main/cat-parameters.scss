@@ -428,10 +428,10 @@
 
   &--radio {
     padding-left: 45px;
+    display: block;
 
     @media (max-width: $mobile-width-only) {
-      width: 210px;
-      overflow: hidden;
+      max-width: 210px;
     }
 
     @media (min-width: $tablet-width) {
@@ -445,6 +445,7 @@
 
   &--checkbox {
     padding-left: 45px;
+    display: block;
 
     @media (min-width: $tablet-width) {
       padding-left: 58px;
