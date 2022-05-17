@@ -101,13 +101,13 @@
     display: flex;
     flex-wrap: wrap;
     width: 440px;
-    justify-content: flex-end;
-    margin-top: 5px;
+    justify-content: flex-start;
+    margin-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 640px;
+    width: 480px;
     margin: 0;
   }
 }
@@ -128,6 +128,8 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+
     &:not(:last-child) {
       margin-right: 34px;
     }
@@ -150,7 +152,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
-    padding: 8px 0;
+    padding: 10px 0 8px 0;
 
     &:hover {
       color: rgba(0, 0, 0, 0.5);

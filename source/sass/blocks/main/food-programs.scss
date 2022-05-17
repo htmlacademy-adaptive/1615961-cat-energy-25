@@ -39,19 +39,6 @@
   background-position: 22px 21px;
   margin-bottom: 20px;
 
-  &::after {
-    content: "";
-    display: block;
-    width: 240px;
-    border-bottom: 1px solid #d9d9d9;
-    position: absolute;
-    top: 220px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
     background-image: url("../img/img-tablet/less-weight.svg");
