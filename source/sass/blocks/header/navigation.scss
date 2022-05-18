@@ -200,13 +200,20 @@
     display: none;
   }
 
-  .navigation--opened .navigation__list,
-  .navigation--nojs .navigation__list {
+  .navigation--opened .navigation__list {
     display: block;
   }
 
+  .navigation--nojs .navigation__list {
+    @media (max-width: $mobile-width-only) {
+      position: static;
+      margin-left: -20px;
+      display: block;
+    }
+  }
+
   .navigation--nojs .navigation__toggle {
-    opacity: 0;
+    display: none;
   }
 }
 
