@@ -19,11 +19,6 @@
     top: -10px;
   }
 
-  &:focus {
-    outline: 1px solid $basicgreen;
-    outline-offset: 1px;
-  }
-
   &:hover {
     border: 1px solid #bababa;
     cursor: pointer;
@@ -32,6 +27,11 @@
 
 .control-checkbox:hover .control-checkbox__mark {
   border: 1px solid #bababa;
+}
+
+.control-checkbox__field:focus + .control-checkbox__mark {
+  outline: 1px solid $basicgreen;
+  outline-offset: 1px;
 }
 
 .control-checkbox__field:checked + .control-checkbox__mark::after {

@@ -25,6 +25,11 @@
   }
 }
 
+.control-radio__field:focus + .control-radio__mark {
+  outline: 1px solid $basicgreen;
+  outline-offset: 1px;
+}
+
 .control-radio__field:checked + .control-radio__mark::after {
   content: "";
   display: block;
