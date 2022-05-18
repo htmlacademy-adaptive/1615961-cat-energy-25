@@ -1,13 +1,25 @@
 .social__list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  width: 132px;
+  width: 148px;
   padding: 0;
-  margin: 0 auto 43px auto;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 22px 0 20px 0;
+    margin: 0 auto;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 125px;
+  }
+}
+
+.social__item {
+  @media (max-width: $mobile-width-only) {
+    margin: 0 10px 0 10px;
   }
 }
 

@@ -7,7 +7,6 @@
     <link rel="preload" href="../fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="../fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../favicon.ico">
     <link rel="favicon" href="../favicon.webmanifest">
   </head>
@@ -74,32 +73,34 @@
                   </label>
                 </li>
               </ul>
+              <div class="cat-parameters__common-border"></div>
             </fieldset>
             <fieldset class="cat-parameters__wishes">
               <legend class="visually-hidden">Желаемая программа питания</legend>
               <ul class="cat-parameters__list">
                 <li class="cat-parameters__item cat-parameters__item--radio">
-                  <label class="cat-parameters__control">
-                    <input class="control-radio visually-hidden" type="radio" name="program-variant" value="less-weight" checked>
+                  <label class="cat-parameters__control control-radio">
+                    <input class="control-radio__field visually-hidden" type="radio" name="program-variant" value="less-weight" checked>
                     <span class="control-radio__mark"></span>
                     <span class="cat-parameters__text cat-parameters__text--radio">Похудение</span>
                   </label>
                 </li>
                 <li class="cat-parameters__item cat-parameters__item--radio">
-                  <label class="cat-parameters__control">
-                    <input class="control-radio visually-hidden" type="radio" name="program-variant" value="more-weight">
+                  <label class="cat-parameters__control control-radio">
+                    <input class="control-radio__field visually-hidden" type="radio" name="program-variant" value="more-weight">
                     <span class="control-radio__mark"></span>
                     <span class="cat-parameters__text cat-parameters__text--radio">Набор массы</span>
                   </label>
                 </li>
                 <li class="cat-parameters__item cat-parameters__item--radio">
-                  <label class="cat-parameters__control">
-                    <input class="control-radio visually-hidden" type="radio" name="program-variant" value="want-ask">
+                  <label class="cat-parameters__control control-radio">
+                    <input class="control-radio__field visually-hidden" type="radio" name="program-variant" value="want-ask">
                     <span class="control-radio__mark"></span>
                     <span class="cat-parameters__text cat-parameters__text--radio">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
+              <div class="cat-parameters__wishes-border"></div>
             </fieldset>
           </div>
           <fieldset class="cat-parameters__owner">
@@ -107,9 +108,9 @@
             <ul class="cat-parameters__list cat-parameters__list--owner">
               <li class="cat-parameters__item">
                 <label class="cat-parameters__control">
-                  <span class="cat-parameters__text">E-mail:</span>
+                  <span class="cat-parameters__text">E-mail:*</span>
                   <input class="control-input control-input--email" type="email" name="cat-name" placeholder="kuklachev@gmail.com" required>
-                  <svg class="control-input--icon-email" width="19" height="14" viewBox="0 0 19 14" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="input-icon input-icon--email" width="19" height="14" viewBox="0 0 19 14" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#icon-email"></use>
                   </svg>
                 </label>
@@ -118,7 +119,7 @@
                 <label class="cat-parameters__control">
                   <span class="cat-parameters__text">Телефон:*</span>
                   <input class="control-input control-input--phone" type="tel" name="cat-name" placeholder="8 (960) 900-60-90" required>
-                  <svg class="control-input--icon-phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="input-icon input-icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                 </label>
@@ -128,36 +129,36 @@
           <fieldset class="cat-parameters__comment">
             <legend class="cat-parameters__legend cat-parameters__legend--comments">Комментарий</legend>
             <label class="cat-parameters__control">
-              <textarea class="control-input control-input--comment" type="text" name="cat-name" placeholder="Расскажите обо всех повадках кота" required></textarea>
+              <textarea class="control-input control-input--comment" name="cat-name" placeholder="Расскажите обо всех повадках кота" required></textarea>
             </label>
           </fieldset>
           <fieldset class="cat-parameters__additional">
             <legend class="cat-parameters__legend cat-parameters__legend--additional">Дополнительно</legend>
             <ul class="cat-parameters__list cat-parameters__list--additional">
               <li class="cat-parameters__item cat-parameters__item--checkbox">
-                <label class="cat-parameters__control">
-                  <input class="control-checkbox visually-hidden" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
+                <label class="cat-parameters__control control-checkbox">
+                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="cat-parameters__item cat-parameters__item--checkbox">
-                <label class="cat-parameters__control">
-                  <input class="control-checkbox visually-hidden" type="checkbox" name="water" value="water">
+                <label class="cat-parameters__control control-checkbox">
+                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="water" value="water">
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Питьевая вода</span>
                 </label>
               </li>
               <li class="cat-parameters__item cat-parameters__item--checkbox">
-                <label class="cat-parameters__control">
-                  <input class="control-checkbox visually-hidden" type="checkbox" name="milk" value="milk">
+                <label class="cat-parameters__control control-checkbox">
+                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="milk" value="milk">
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Молоко</span>
                 </label>
               </li>
               <li class="cat-parameters__item cat-parameters__item--checkbox">
-                <label class="cat-parameters__control">
-                  <input class="control-checkbox visually-hidden" type="checkbox" name="vitamines" value="vitamines">
+                <label class="cat-parameters__control control-checkbox">
+                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="vitamines" value="vitamines">
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Витамины</span>
                 </label>
@@ -173,7 +174,7 @@
       <section class="contacts contacts--inner">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</h2>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <br><br class="contacts__br">Санкт-Петербург</p>
         </div>
         <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002935!2d30.320858715859668!3d59.93871916905446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1650010073866!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy"         title="Офис компании по адресу Большая Конюшенная 19/8 Санкт-Петербург">
         </iframe>
@@ -190,7 +191,7 @@
           <h3 class="visually-hidden">Социальные сети</h3>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://twitter.com/htmlacademy_ru" target="_blank">
+              <a class="social__link" href="https://vk.com/htmlacademy" target="_blank">
                 <svg width="27" height="17" viewBox="0 0 27 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#footer-vk"></use>
                 </svg>
@@ -198,7 +199,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://twitter.com/htmlacademy_ru" target="_blank">
+              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
                 <svg width="24" height="19" viewBox="0 0 24 19" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#footer-youtube"></use>
                 </svg>
@@ -206,7 +207,7 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://twitter.com/htmlacademy_ru" target="_blank">
+              <a class="social__link" href="https://t.me/htmlacademy" target="_blank">
                 <svg width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#footer-telegram"></use>
                 </svg>
@@ -216,6 +217,7 @@
           </ul>
         </section>
         <section class="footer-developer">
+          <h3 class="visually-hidden">Информация о разработчике сайта</h3>
           <a class="footer-developer__link-text" href="https://htmlacademy.ru">
             <svg width="113" height="16" viewBox="0 0 113 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#footer-academy-text"></use>
@@ -229,7 +231,6 @@
         </section>
       </div>
     </footer>
-    <script src="js/script.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>

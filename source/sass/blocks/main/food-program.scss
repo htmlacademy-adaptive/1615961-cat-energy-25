@@ -4,7 +4,7 @@
   width: 280px;
   min-height: 266px;
   background-color: #f2f2f2;
-  padding: 21px 33px 18px 20px;
+  padding: 21px 33px 16px 20px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -13,7 +13,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 77px 51px 55px 52px;
+    padding: 77px 51px 60px 52px;
 
     &:not(:last-child) {
       margin-right: 80px;
@@ -47,7 +47,7 @@
   line-height: 18px;
   font-weight: 400;
   color: $specialgrey;
-  margin: 0 0 42px 0;
+  margin: 0 0 23px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -59,6 +59,16 @@
   @media (min-width: $desktop-width) {
     width: 467px;
     margin: 0 0 27px 0;
+  }
+}
+
+.food-program__description-border {
+  width: 240px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -97,27 +107,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 135px 10px;
+    background-position: 128px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
       opacity: 0.4;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 138px 10px;
+    background-position: 135px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
       opacity: 0.4;
     }
   }
@@ -138,27 +148,27 @@
   }
 
   @media (min-width: $tablet-width) {
-    background-position: 135px 10px;
+    background-position: 128px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 128px 8px;
       opacity: 0.4;
     }
   }
 
   @media (min-width: $desktop-width) {
-    background-position: 138px 10px;
+    background-position: 130px 8px;
 
     &:hover {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
     }
 
     &:active {
-      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 138px 10px;
+      background: url("../img/icons/icon-arrow-hover.svg") no-repeat 135px 8px;
       opacity: 0.4;
     }
   }

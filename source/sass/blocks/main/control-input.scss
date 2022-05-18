@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 11px 36px 11px 19px;
+    padding: 10px 36px 10px 19px;
   }
 
   &--name {
@@ -27,10 +27,12 @@
 
     @media (min-width: $tablet-width) {
       width: 567px;
+      margin-left: 11px;
     }
 
     @media (min-width: $desktop-width) {
       width: 506px;
+      margin-left: 13px;
     }
   }
 
@@ -44,10 +46,12 @@
 
     @media (min-width: $tablet-width) {
       width: 536px;
+      margin-left: 15px;
     }
 
     @media (min-width: $desktop-width) {
       width: 475px;
+      margin-left: 16px;
     }
   }
 
@@ -61,16 +65,18 @@
 
     @media (min-width: $tablet-width) {
       width: 497px;
+      margin-left: 14px;
     }
 
     @media (min-width: $desktop-width) {
       width: 436px;
+      margin-left: 14px;
     }
   }
 
   &--email {
-    width: 217px;
-    margin-left: 8px;
+    width: 219px;
+    margin-left: 7px;
 
     @media (max-width: $mobile-width-only) {
       max-height: 46px;
@@ -78,26 +84,12 @@
 
     @media (min-width: $tablet-width) {
       width: 551px;
+      margin-left: 16px;
     }
 
     @media (min-width: $desktop-width) {
       width: 486px;
-      margin-left: 16px;
-    }
-  }
-
-  &--icon-email {
-    position: absolute;
-    top: 5px;
-    left: 245px;
-    color: #222222;
-
-    @media (min-width: $tablet-width) {
-      left: 580px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 530px;
+      margin-left: 19px;
     }
   }
 
@@ -111,25 +103,12 @@
 
     @media (min-width: $tablet-width) {
       width: 535px;
+      margin-left: 8px;
     }
 
     @media (min-width: $desktop-width) {
       width: 472px;
-    }
-  }
-
-  &--icon-phone {
-    position: absolute;
-    top: 2px;
-    left: 245px;
-    color: #222222;
-
-    @media (min-width: $tablet-width) {
-      left: 580px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 530px;
+      margin-left: 12px;
     }
   }
 
@@ -137,15 +116,18 @@
     width: 280px;
     min-height: 150px;
     margin-left: 0;
-    padding: 13px 15px;
+    padding: 13px 12px 13px 15px;
     resize: none;
 
     @media (min-width: $tablet-width) {
       width: 631px;
+      padding: 11px 15px;
+      min-height: 174px;
     }
 
     @media (min-width: $desktop-width) {
       width: 1220px;
+      padding: 11px 18px;
     }
   }
 
@@ -164,28 +146,12 @@
   }
 }
 
-.control-input--email:focus + .control-input--icon-email {
-  color: #68b738;
-}
-
-.control-input--phone:focus + .control-input--icon-phone {
-  color: #68b738;
-}
-
-.control-input--phone-error {
-  outline: 2px solid #ff8282;
-  outline-offset: -1px;
-}
-
-.control-input--phone-error + .control-input--icon-email {
-  color: #ff8282;
-}
-
 .control-input--email-error {
   outline: 2px solid #ff8282;
   outline-offset: -1px;
 }
 
-.control-input--email-error + .control-input--icon-email {
-  color: #ff8282;
+.control-input--phone-error {
+  outline: 2px solid #ff8282;
+  outline-offset: -1px;
 }

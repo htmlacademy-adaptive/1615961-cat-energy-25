@@ -12,6 +12,11 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    top: -6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -5px;
   }
 
   &:hover {
@@ -20,7 +25,7 @@
   }
 }
 
-.control-radio:checked + .control-radio__mark::after {
+.control-radio__field:checked + .control-radio__mark::after {
   content: "";
   display: block;
   width: 14px;
@@ -38,12 +43,12 @@
   }
 }
 
-.control-radio:disabled + .cat-parameters__text--radio {
+.control-radio__field:disabled + .cat-parameters__text--radio {
   color: #222222;
   opacity: 0.3;
 }
 
-.control-radio:disabled + .control-radio__mark {
+.control-radio__field:disabled + .control-radio__mark {
   border: 1px solid #bababa;
   opacity: 0.3;
   cursor: default;

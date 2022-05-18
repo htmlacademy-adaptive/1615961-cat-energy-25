@@ -2,20 +2,26 @@
   width: 280px;
   min-height: 290px;
   background-image: url("../img/icons/icon-gift.svg"), url("../img/background-gift.jpg");
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat-y;
   background-position: 101px 59px, center;
-  position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/icons/icon-gift.svg"), url("../img/background-gift@2x.jpg");
     background-size: auto, 280px auto;
   }
 
+  @media (max-width: $mobile-width-only) {
+    box-sizing: border-box;
+    padding-top: 187px;
+  }
+
   @media (min-width: $tablet-width) {
+    position: relative;
     width: 707px;
     min-height: 200px;
     padding: 0;
     background-image: url("../img/icons/icon-gift.svg"), url("../img/img-tablet/background-gift.jpg");
+    background-repeat: no-repeat;
     background-position: 77px 57px, center;
 
     @media (min-resolution: 2dppx) {
@@ -38,8 +44,6 @@
 }
 
 .gift__title {
-  position: absolute;
-  top: 187px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -47,9 +51,10 @@
   color: #ffffff;
   text-align: center;
   width: 161px;
-  margin: auto auto auto 58px;
+  margin: 0 auto auto 58px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     margin: 0;
     text-align: left;
     top: 71px;
