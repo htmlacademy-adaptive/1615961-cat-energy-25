@@ -30,6 +30,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 90px 90px;
     padding: 0 30px 40px 35px;
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 19%, #f2f2f2 19%, #f2f2f2 100%);
   }
 }
 
