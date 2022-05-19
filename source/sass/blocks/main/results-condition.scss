@@ -88,7 +88,7 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 12px #ffffff;
+    box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 13px #ffffff;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +98,7 @@
 
   &:focus {
     @media (min-width: $tablet-width) {
-      box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 12px #ffffff, 0 2px 4px 0.1px #cdcdcd;
+      box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 13px #ffffff, 0 2px 4px 0.1px #cdcdcd;
       outline: 1px solid $basicgreen;
       outline-offset: 2px;
     }
@@ -106,13 +106,13 @@
 
   &:hover {
     @media (min-width: $tablet-width) {
-      box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 12px #ffffff, 0 2px 4px 0.1px #cdcdcd;
+      box-shadow: inset 0 0 0 1px #cdcdcd, inset 0 0 0 13px #ffffff, 0 2px 4px 0.1px #cdcdcd;
     }
   }
 
   &:active {
     @media (min-width: $tablet-width) {
-      box-shadow: inset 0 0 0 1px $basicgreen, inset 0 0 0 12px #ffffff, 0 2px 4px 0.1px #cdcdcd;
+      box-shadow: inset 0 0 0 1px $basicgreen, inset 0 0 0 13px #ffffff, 0 2px 4px 0.1px #cdcdcd;
       outline: none;
     }
   }
