@@ -20,6 +20,12 @@
   }
 }
 
+.header--form {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 3px;
+  }
+}
+
 .header__wrapper {
   box-sizing: border-box;
   display: flex;
