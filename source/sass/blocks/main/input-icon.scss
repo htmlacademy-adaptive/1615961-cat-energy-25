@@ -22,19 +22,3 @@
     }
   }
 }
-
-.control-input--email:focus + .input-icon--email {
-  color: #68b738;
-}
-
-.control-input--phone:focus + .input-icon--phone {
-  color: #68b738;
-}
-
-.control-input--phone-error + .input-icon--phone {
-  color: #ff8282;
-}
-
-.control-input--email-error + .input-icon--email {
-  color: #ff8282;
-}
