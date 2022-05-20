@@ -67,7 +67,7 @@
 }
 
 .cat-parameters__wishes {
-  margin: 0 0 28px 0;
+  margin: 0 0 26px 0;
   padding: 0;
   border: none;
 
@@ -387,6 +387,7 @@
 
 .cat-parameters__control {
   position: relative;
+  display: block;
 
   &:hover {
     cursor: pointer;
@@ -457,22 +458,38 @@
   }
 }
 
-.control-checkbox:disabled ~ .cat-parameters__text--checkbox:hover {
+.cat-parameters__control-checkbox:disabled ~ .cat-parameters__text--checkbox:hover {
   cursor: default;
 }
 
-.control-radio:disabled ~ .cat-parameters__text--radio:hover {
-  cursor: default;
-}
-
-.control-checkbox:disabled ~ .cat-parameters__text--checkbox {
+.cat-parameters__control-checkbox:disabled ~ .cat-parameters__text--checkbox {
   color: #222222;
   opacity: 0.3;
 }
 
-.control-radio:disabled ~ .cat-parameters__text--radio {
+.cat-parameters__control-radio:disabled ~ .cat-parameters__text--radio:hover {
+  cursor: default;
+}
+
+.cat-parameters__control-radio:disabled ~ .cat-parameters__text--radio {
   color: #222222;
   opacity: 0.3;
+}
+
+.cat-parameters__input-email:focus + .cat-parameters__icon-email {
+  color: #68b738;
+}
+
+.cat-parameters__input-phone:focus + .cat-parameters__icon-phone {
+  color: #68b738;
+}
+
+.cat-parameters__input-email-error + .cat-parameters__icon-email {
+  color: #ff8282;
+}
+
+.cat-parameters__input-phone-error + .cat-parameters__icon-phone {
+  color: #ff8282;
 }
 
 .cat-parameters__button {

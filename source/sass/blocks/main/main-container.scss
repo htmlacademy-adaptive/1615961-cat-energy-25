@@ -1,4 +1,8 @@
 .main-container {
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 1439px) {
+    overflow-x: hidden;
+  }
 }

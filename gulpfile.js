@@ -41,7 +41,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src('source/js/script.js')
   .pipe(terser())
-  .pipe(rename("script.min.js"))
+  .pipe(rename('script.min.js'))
   .pipe(gulp.dest('build/js'))
   .pipe(browser.stream());
   }
@@ -70,9 +70,9 @@ const optimizeImages = () => {
 
 const createWebp = () => {
   return gulp
-    .src("source/img/**/*.{png,jpg}")
+    .src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({webp: {}}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest('build/img'));
   }
 
 // SVG

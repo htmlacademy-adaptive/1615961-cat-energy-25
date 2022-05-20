@@ -200,13 +200,18 @@
     display: none;
   }
 
-  .navigation--opened .navigation__list,
+  .navigation--opened .navigation__list {
+    display: block;
+  }
+
   .navigation--nojs .navigation__list {
+    position: static;
+    margin-left: -20px;
     display: block;
   }
 
   .navigation--nojs .navigation__toggle {
-    opacity: 0;
+    display: none;
   }
 }
 
@@ -217,7 +222,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    padding: 8px 0;
 
     &:hover {
       color: rgba(0, 0, 0, 0.5);

@@ -29,6 +29,11 @@
   border: 1px solid #bababa;
 }
 
+.control-checkbox__field:focus + .control-checkbox__mark {
+  outline: 1px solid $basicgreen;
+  outline-offset: 1px;
+}
+
 .control-checkbox__field:checked + .control-checkbox__mark::after {
   content: "";
   display: block;

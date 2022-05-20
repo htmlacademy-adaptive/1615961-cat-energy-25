@@ -11,7 +11,7 @@
     <link rel="favicon" href="../favicon.webmanifest">
   </head>
   <body class="page__body">
-    <header class="header header--inner">
+    <header class="header header--inner header--form">
       <div class="header__wrapper header__wrapper--inner">
         <a class="header__logo-image" href="index.html">
           <picture>
@@ -80,21 +80,21 @@
               <ul class="cat-parameters__list">
                 <li class="cat-parameters__item cat-parameters__item--radio">
                   <label class="cat-parameters__control control-radio">
-                    <input class="control-radio__field visually-hidden" type="radio" name="program-variant" value="less-weight" checked>
+                    <input class="control-radio__field cat-parameters__control-radio visually-hidden" type="radio" name="program-variant" value="less-weight" checked>
                     <span class="control-radio__mark"></span>
                     <span class="cat-parameters__text cat-parameters__text--radio">Похудение</span>
                   </label>
                 </li>
                 <li class="cat-parameters__item cat-parameters__item--radio">
                   <label class="cat-parameters__control control-radio">
-                    <input class="control-radio__field visually-hidden" type="radio" name="program-variant" value="more-weight">
+                    <input class="control-radio__field cat-parameters__control-radio visually-hidden" type="radio" name="program-variant" value="more-weight">
                     <span class="control-radio__mark"></span>
                     <span class="cat-parameters__text cat-parameters__text--radio">Набор массы</span>
                   </label>
                 </li>
                 <li class="cat-parameters__item cat-parameters__item--radio">
                   <label class="cat-parameters__control control-radio">
-                    <input class="control-radio__field visually-hidden" type="radio" name="program-variant" value="want-ask">
+                    <input class="control-radio__field cat-parameters__control-radio visually-hidden" type="radio" name="program-variant" value="want-ask">
                     <span class="control-radio__mark"></span>
                     <span class="cat-parameters__text cat-parameters__text--radio">Не знаю (Нужен ваш совет)</span>
                   </label>
@@ -109,8 +109,8 @@
               <li class="cat-parameters__item">
                 <label class="cat-parameters__control">
                   <span class="cat-parameters__text">E-mail:*</span>
-                  <input class="control-input control-input--email" type="email" name="cat-name" placeholder="kuklachev@gmail.com" required>
-                  <svg class="input-icon input-icon--email" width="19" height="14" viewBox="0 0 19 14" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <input class="cat-parameters__input-email control-input control-input--email" type="email" name="cat-name" placeholder="kuklachev@gmail.com" required>
+                  <svg class="cat-parameters__icon-email input-icon input-icon--email" width="19" height="14" viewBox="0 0 19 14" stroke="currentColor" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#icon-email"></use>
                   </svg>
                 </label>
@@ -118,8 +118,8 @@
               <li class="cat-parameters__item">
                 <label class="cat-parameters__control">
                   <span class="cat-parameters__text">Телефон:*</span>
-                  <input class="control-input control-input--phone" type="tel" name="cat-name" placeholder="8 (960) 900-60-90" required>
-                  <svg class="input-icon input-icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <input class="cat-parameters__input-phone control-input control-input--phone" type="tel" name="cat-name" placeholder="8 (960) 900-60-90" required>
+                  <svg class="cat-parameters__icon-phone input-icon input-icon--phone" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                 </label>
@@ -137,28 +137,28 @@
             <ul class="cat-parameters__list cat-parameters__list--additional">
               <li class="cat-parameters__item cat-parameters__item--checkbox">
                 <label class="cat-parameters__control control-checkbox">
-                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
+                  <input class="control-checkbox__field cat-parameters__control-checkbox visually-hidden" type="checkbox" name="sugar-substitute" value="sugar-substitute" checked>
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Сахарозаменитель</span>
                 </label>
               </li>
               <li class="cat-parameters__item cat-parameters__item--checkbox">
                 <label class="cat-parameters__control control-checkbox">
-                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="water" value="water">
+                  <input class="control-checkbox__field cat-parameters__control-checkbox visually-hidden" type="checkbox" name="water" value="water">
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Питьевая вода</span>
                 </label>
               </li>
               <li class="cat-parameters__item cat-parameters__item--checkbox">
                 <label class="cat-parameters__control control-checkbox">
-                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="milk" value="milk">
+                  <input class="control-checkbox__field cat-parameters__control-checkbox visually-hidden" type="checkbox" name="milk" value="milk">
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Молоко</span>
                 </label>
               </li>
               <li class="cat-parameters__item cat-parameters__item--checkbox">
                 <label class="cat-parameters__control control-checkbox">
-                  <input class="control-checkbox__field visually-hidden" type="checkbox" name="vitamines" value="vitamines">
+                  <input class="control-checkbox__field cat-parameters__control-checkbox visually-hidden" type="checkbox" name="vitamines" value="vitamines">
                   <span class="control-checkbox__mark"></span>
                   <span class="cat-parameters__text cat-parameters__text--checkbox">Витамины</span>
                 </label>
@@ -186,6 +186,7 @@
           <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#footer-logo-text"></use>
           </svg>
+          <span class="visually-hidden">Текстовый логотип CAT ENERGY</span>
         </a>
         <section class="footer__social social">
           <h3 class="visually-hidden">Социальные сети</h3>
@@ -218,15 +219,17 @@
         </section>
         <section class="footer-developer">
           <h3 class="visually-hidden">Информация о разработчике сайта</h3>
-          <a class="footer-developer__link-text" href="https://htmlacademy.ru">
+          <a class="footer-developer__link-text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg width="113" height="16" viewBox="0 0 113 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#footer-academy-text"></use>
             </svg>
+            <span class="visually-hidden">Текст HTML Academy</span>
           </a>
-          <a class="footer-developer__link" href="https://htmlacademy.ru">
+          <a class="footer-developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#footer-academy-logo"></use>
             </svg>
+            <span class="visually-hidden">Логотип HTML Academy</span>
           </a>
         </section>
       </div>

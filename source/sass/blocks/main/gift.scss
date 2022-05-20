@@ -1,6 +1,7 @@
 .gift {
   width: 280px;
   min-height: 290px;
+  background-color: #70b448;
   background-image: url("../img/icons/icon-gift.svg"), url("../img/background-gift.jpg");
   background-repeat: no-repeat, repeat-y;
   background-position: 101px 59px, center;
@@ -62,8 +63,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 190px;
-    left: 45px;
+    top: 188px;
+    left: 37px;
     text-align: center;
   }
 }

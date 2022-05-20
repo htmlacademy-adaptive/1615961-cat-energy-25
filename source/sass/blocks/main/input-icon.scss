@@ -3,38 +3,32 @@
   color: #222222;
 
   &--email {
-    top: 5px;
+    top: 15px;
     right: 16px;
 
     @media (min-width: $tablet-width) {
-      right: 19px;
-      top: 2px;
+      right: 55px;
+      top: 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 30px;
+      top: 18px;
     }
   }
 
   &--phone {
-    top: 2px;
+    top: 12px;
     right: 13px;
 
     @media (min-width: $tablet-width) {
-      right: 17px;
-      top: 1px;
+      right: 55px;
+      top: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 30px;
+      top: 15px;
     }
   }
-}
-
-.control-input--email:focus + .input-icon--email {
-  color: #68b738;
-}
-
-.control-input--phone:focus + .input-icon--phone {
-  color: #68b738;
-}
-
-.control-input--phone-error + .input-icon--phone {
-  color: #ff8282;
-}
-
-.control-input--email-error + .input-icon--email {
-  color: #ff8282;
 }
